@@ -252,7 +252,7 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 
 ## 👨‍💻 Author
 
-**Muhammad Ramazan**
+**Einar Montalvo**
 
 - Portfolio: [https://mramazan.dev](https://mramazan.dev)
 - GitHub: [@lightify97](https://github.com/lightify97)
