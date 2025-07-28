@@ -193,7 +193,7 @@ portfolio/
 │   │   │   ├── ProjectsSection.tsx
 │   │   │   ├── SectionHeader.tsx
 │   │   │   ├── TechStackSection.tsx
-│   │   │   ├── TestimonialsSection.tsx
+│   │   │   ├── EducationSection.tsx
 │   │   │   ├── TypewriterRole.tsx
 │   │   │   └── index.ts        # Component exports
 │   │   ├── AnimatedBackground.tsx
@@ -254,9 +254,9 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 
 **Einar Montalvo**
 
-- Portfolio: [https://mramazan.dev](https://mramazan.dev)
-- GitHub: [@lightify97](https://github.com/emontalvo610)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/m-ramazan)
+- Portfolio: [https://portfolio-einar.vercel.app/](https://portfolio-einar.vercel.app/)
+- GitHub: [https://github.com/emontalvo610](https://github.com/emontalvo610)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/einar-m-610185369/)
 - Email: montalvoeinar669@gmail.com
 
 ## 🙏 Acknowledgments

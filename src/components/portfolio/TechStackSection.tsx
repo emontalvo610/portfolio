@@ -22,7 +22,7 @@ const techStackData: Record<string, TechItem[]> = {
       level: "Expert",
       category: "Backend",
       description: "JavaScript runtime for server-side applications",
-      yearsUsed: 4
+      yearsUsed: 8
     },
     {
       name: "Python",
@@ -30,7 +30,15 @@ const techStackData: Record<string, TechItem[]> = {
       level: "Expert",
       category: "Backend",
       description: "Versatile language for backend and data science",
-      yearsUsed: 5
+      yearsUsed: 10
+    },
+        {
+      name: "Nest",
+      icon: "devicon:nestjs",
+      level: "Expert",
+      category: "Backend",
+      description: "Fast, minimalist web framework for Node.js",
+      yearsUsed: 4
     },
     {
       name: "Express",
@@ -38,31 +46,47 @@ const techStackData: Record<string, TechItem[]> = {
       level: "Expert",
       category: "Backend",
       description: "Fast, minimalist web framework for Node.js",
-      yearsUsed: 3
+      yearsUsed: 8
+    },
+    {
+      name: "FastAPI",
+      icon: "devicon:fastapi",
+      level: "Expert",
+      category: "Backend",
+      description: "High-level Python web framework",
+      yearsUsed: 4
     },
     {
       name: "Django",
       icon: "material-icon-theme:django",
-      level: "Intermediate",
+      level: "Expert",
       category: "Backend",
       description: "High-level Python web framework",
-      yearsUsed: 2
+      yearsUsed: 8
     },
     {
       name: "GraphQL",
       icon: "logos:graphql",
-      level: "Intermediate",
+      level: "Expert",
       category: "Backend",
       description: "Query language for APIs",
-      yearsUsed: 2
+      yearsUsed: 6
     },
     {
       name: "Socket.io",
       icon: "simple-icons:socketdotio",
-      level: "Intermediate",
+      level: "Expert",
       category: "Backend",
       description: "Real-time bidirectional event-based communication",
-      yearsUsed: 2
+      yearsUsed: 5
+    },
+    {
+      name: "OAuth2",
+      icon: "devicon:oauth",
+      level: "Expert",
+      category: "Backend",
+      description: "RESTful API for web applications",
+      yearsUsed: 5
     },
   ],
   "Frontend": [
@@ -72,7 +96,15 @@ const techStackData: Record<string, TechItem[]> = {
       level: "Expert",
       category: "Frontend",
       description: "Building modern, interactive user interfaces",
-      yearsUsed: 4
+      yearsUsed: 8
+    },
+    {
+      name: "Vue",
+      icon: "skill-icons:vuejs-dark",
+      level: "Expert",
+      category: "Frontend",
+      description: "Building modern, interactive user interfaces",
+      yearsUsed: 6
     },
     {
       name: "Next.js",
@@ -80,7 +112,15 @@ const techStackData: Record<string, TechItem[]> = {
       level: "Expert",
       category: "Frontend",
       description: "Full-stack React framework for production apps",
-      yearsUsed: 3
+      yearsUsed: 5
+    },
+    {
+      name: "Redux",
+      icon: "skill-icons:redux",
+      level: "Expert",
+      category: "Frontend",
+      description: "Utility-first CSS framework for rapid UI development",
+      yearsUsed: 7
     },
     {
       name: "TypeScript",
@@ -88,7 +128,7 @@ const techStackData: Record<string, TechItem[]> = {
       level: "Expert",
       category: "Frontend",
       description: "Type-safe JavaScript for scalable applications",
-      yearsUsed: 4
+      yearsUsed: 8
     },
     {
       name: "JavaScript",
@@ -96,7 +136,7 @@ const techStackData: Record<string, TechItem[]> = {
       level: "Expert",
       category: "Frontend",
       description: "Core language for web development",
-      yearsUsed: 5
+      yearsUsed: 12
     },
     {
       name: "Tailwind CSS",
@@ -104,7 +144,40 @@ const techStackData: Record<string, TechItem[]> = {
       level: "Expert",
       category: "Frontend",
       description: "Utility-first CSS framework for rapid UI development",
-      yearsUsed: 3
+      yearsUsed: 4
+    },
+
+    {
+      name: "Material UI",
+      icon: "skill-icons:materialui-dark",
+      level: "Expert",
+      category: "Frontend",
+      description: "Utility-first CSS framework for rapid UI development",
+      yearsUsed: 8
+    },
+    {
+      name: "D3.js",
+      icon: "devicon:d3js",
+      level: "Expert",
+      category: "Frontend",
+      description: "Utility-first CSS framework for rapid UI development",
+      yearsUsed: 5
+    },
+    {
+      name: "SVG",
+      icon: "skill-icons:svg-dark",
+      level: "Expert",
+      category: "Frontend",
+      description: "Utility-first CSS framework for rapid UI development",
+      yearsUsed: 10
+    },
+    {
+      name: "Tanstack Query",
+      icon: "logos:react-query-icon",
+      level: "Expert",
+      category: "Frontend",
+      description: "Utility-first CSS framework for rapid UI development",
+      yearsUsed: 3  
     },
     {
       name: "Flutter",
@@ -113,7 +186,7 @@ const techStackData: Record<string, TechItem[]> = {
       category: "Frontend",
       description: "Cross-platform mobile app development",
       yearsUsed: 2
-    },
+    },  
   ],
   "Database": [
     {
@@ -122,7 +195,7 @@ const techStackData: Record<string, TechItem[]> = {
       level: "Expert",
       category: "Database",
       description: "Advanced open-source relational database",
-      yearsUsed: 3
+      yearsUsed: 4
     },
     {
       name: "MongoDB",
@@ -130,23 +203,23 @@ const techStackData: Record<string, TechItem[]> = {
       level: "Expert",
       category: "Database",
       description: "NoSQL document database",
-      yearsUsed: 3
+      yearsUsed: 6
     },
     {
       name: "MySQL",
       icon: "logos:mysql",
-      level: "Intermediate",
+      level: "Expert",
       category: "Database",
       description: "Popular open-source relational database",
-      yearsUsed: 3
+      yearsUsed: 10
     },
     {
       name: "Redis",
       icon: "devicon:redis",
-      level: "Intermediate",
+      level: "Expert",
       category: "Database",
       description: "In-memory data structure store",
-      yearsUsed: 2
+      yearsUsed: 5
     },
     {
       name: "Prisma",
@@ -154,25 +227,33 @@ const techStackData: Record<string, TechItem[]> = {
       level: "Expert",
       category: "Database",
       description: "Next-generation ORM for Node.js and TypeScript",
-      yearsUsed: 2
+      yearsUsed: 4
+    },
+    {
+      name: "ELK",
+      icon: "skill-icons:elasticsearch-dark",
+      level: "Expert",
+      category: "Database",
+      description: "Next-generation ORM for Node.js and TypeScript",
+      yearsUsed: 3
     },
   ],
   "Cloud & DevOps": [
     {
       name: "AWS",
       icon: "skill-icons:aws-light",
-      level: "Intermediate",
+      level: "Expert",
       category: "Cloud & DevOps",
       description: "Amazon Web Services cloud platform",
-      yearsUsed: 2
+      yearsUsed: 8
     },
     {
       name: "GCP",
       icon: "skill-icons:gcp-light",
-      level: "Intermediate",
+      level: "Expert",
       category: "Cloud & DevOps",
       description: "Google Cloud Platform services",
-      yearsUsed: 2
+      yearsUsed: 4
     },
     {
       name: "Firebase",
@@ -180,15 +261,23 @@ const techStackData: Record<string, TechItem[]> = {
       level: "Expert",
       category: "Cloud & DevOps",
       description: "Google's app development platform",
+      yearsUsed: 6
+    },
+        {
+      name: "Kubernetes",
+      icon: "logos:kubernetes",
+      level: "Intermediate",
+      category: "Cloud & DevOps",
+      description: "Containerization platform",
       yearsUsed: 3
     },
     {
       name: "Docker",
       icon: "devicon:docker",
-      level: "Intermediate",
+      level: "Expert",
       category: "Cloud & DevOps",
       description: "Containerization platform",
-      yearsUsed: 2
+      yearsUsed: 6
     },
     {
       name: "Git",
@@ -196,7 +285,7 @@ const techStackData: Record<string, TechItem[]> = {
       level: "Expert",
       category: "Cloud & DevOps",
       description: "Version control system",
-      yearsUsed: 5
+      yearsUsed: 8
     },
   ],
   "AI & Integration": [
@@ -206,7 +295,7 @@ const techStackData: Record<string, TechItem[]> = {
       level: "Expert",
       category: "AI & Integration",
       description: "AI-powered applications and chatbots",
-      yearsUsed: 2
+      yearsUsed: 3
     },
     {
       name: "LangChain",
@@ -214,7 +303,7 @@ const techStackData: Record<string, TechItem[]> = {
       level: "Expert",
       category: "AI & Integration",
       description: "Framework for developing LLM applications",
-      yearsUsed: 1
+      yearsUsed: 2
     },
     {
       name: "Vercel AI SDK",
@@ -227,7 +316,7 @@ const techStackData: Record<string, TechItem[]> = {
     {
       name: "Stripe",
       icon: "logos:stripe",
-      level: "Intermediate",
+      level: "Expert",
       category: "AI & Integration",
       description: "Payment processing integration",
       yearsUsed: 2
@@ -236,6 +325,15 @@ const techStackData: Record<string, TechItem[]> = {
       // vector database
       name: "Vector Database",
       icon: "ph:vector-three-duotone",
+      level: "Expert",
+      category: "AI & Integration",
+      description: "Vector database for storing and querying embeddings",
+      yearsUsed: 2
+    },
+    {
+      // mcp
+      name: "MCP",
+      icon: "codicon:mcp",
       level: "Intermediate",
       category: "AI & Integration",
       description: "Vector database for storing and querying embeddings",

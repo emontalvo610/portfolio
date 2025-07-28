@@ -6,36 +6,52 @@ import SectionHeader from "./SectionHeader";
 
 const experience = [
   {
-    role: "Software Developer",
-    company: "Upwork",
-    period: "January 2020 — Present",
-    type: "Freelance",
-    companyIcon: "fa6-brands:square-upwork",
+    role: "Senior Full Stack Engineer",
+    company: "Deloitte Digital",
+    period: "February 2023 — Present",
+    type: "Remote",
+    companyIcon: "deloitte.jpeg",
     companyColor: "from-green-500 to-green-600",
-    description: "Delivered high-quality projects across diverse domains, including web and mobile applications, API development, and cloud integrations (AWS, GCP).",
+    description: "Orchestrated end-to-end development of AI-powered applications for enterprise clients, delivering complete solutions from intuitive frontends to scalable backend systems and ML model integration.",
     achievements: [
-      "Achieved Top-Rated status with a 91% job success score",
-      "Completed 10+ projects focusing on scalable solutions",
-      "Consistently praised for skillfulness, quick learning, and strong communication",
-      "Earned repeated engagements through reliability and expertise"
+      "Built full-stack AI chat applications with Next.js 15 and Python FastAPI serving GPT-4/Claude LLMs",
+      "Developed RAG systems with vector databases handling 10M+ daily queries",
+      "Architected micro-frontend applications with microservices enabling independent deployment across 5 teams",
+      "Implemented event-driven architectures processing 1TB+ daily data with 50K requests/second"
     ],
-    technologies: ["JavaScript", "Python", "Node.js", "AWS", "GCP", "OpenAI API", "LangChain"]
+    technologies: ["Next.js", "React", "TypeScript", "Python", "FastAPI", "PostgreSQL", "Redis", "AWS", "Kafka", "Docker", "Kubernetes", "GPT-4", "Claude"]
   },
   {
-    role: "HIMS Master Trainer / PACS Specialist",
-    company: "Public Health Organization, Islamabad",
-    period: "July 2019 — Present",
-    type: "Full-time",
+    role: "Senior Web Developer",
+    company: "Fanatics",
+    period: "February 2018 — February 2023",
+    type: "Hybrid",
     companyColor: "from-blue-500 to-blue-600",
-    companyIcon: "mdi:hospital-building",
-    description: "Spearheaded organizational transformation from paper-based manual systems to completely integrated HIMS and PACS (Picture Archiving and Communication System).",
+    companyIcon: "fanatics.jpeg",
+    description: "Engineered comprehensive sports betting platform delivering seamless user experiences with real-time data updates, secure transactions, and scalable backend systems serving millions of users.",
     achievements: [
-      "Led integration of 45+ radiology machines (CT, MRI, X-Ray, Ultrasound)",
-      "Ensured active monitoring for integration issues",
-      "Acted as master trainer and led support team",
-      "Communicated issues and requirements to backend teams"
+      "Developed betting features with React/Next.js and Node.js processing 500K+ events/minute",
+      "Architected Polling/Websocket handling 100K+ concurrent users with sub-50ms response times",
+      "Built enterprise component library with 50+ reusable React components and 60% load time reduction",
+      "Implemented multi-layer caching strategy achieving 95% cache hit rate for dynamic content"
     ],
-    technologies: ["HIMS", "PACS", "System Integration", "Healthcare IT", "Training & Support"]
+    technologies: ["React", "Next.js", "Node.js", "Nest.js", "GraphQL", "PostgreSQL", "Redis", "WebSocket", "TypeScript", "Storybook", "AWS", "Docker"]
+  },
+  {
+    role: "Web Developer",
+    company: "Netflix",
+    period: "October 2013 — February 2018",
+    type: "On-site",
+    companyColor: "from-red-500 to-red-600",
+    companyIcon: "netflix.jpeg",
+    description: "Worked on-site with Netflix teams to develop and enhance their streaming platform, contributing to both frontend player experiences and backend content delivery systems.",
+    achievements: [
+      "Developed Netflix web player features using React/Angular with adaptive UI components",
+      "Built recommendation engine integration layer with Java Spring Boot handling billions of records",
+      "Implemented complete features including personalized homepage and continue watching functionality",
+      "Optimized frontend bundle sizes reducing initial load time by 40% and API response times by 50%"
+    ],
+    technologies: ["React", "Angular", "Java", "Spring Boot", "Cassandra", "Redis", "D3.js", "Webpack", "REST APIs", "CDN", "A/B Testing"]
   }
 ];
 
@@ -122,16 +138,15 @@ export default function ExperienceSection() {
                   <motion.div
                     variants={iconVariants}
                     whileHover={{ scale: 1.1, rotate: 5 }}
-                    className={`w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 rounded-2xl md:rounded-3xl bg-gradient-to-br ${exp.companyColor} flex items-center justify-center shadow-xl md:shadow-2xl mb-3 md:mb-4 relative overflow-hidden group-hover:shadow-2xl md:group-hover:shadow-3xl transition-all duration-500`}
                   >
-                    <Icon
-                      icon={exp.companyIcon!}
-                      className="text-white w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 relative z-10"
-                      width={40}
-                      height={40}
+                    <img 
+                      src={exp.companyIcon}
+                      className="text-white  relative z-10 rounded-full"
+                      width={100}
+                      height={100}
                     />
                     {/* Animated background gradient */}
-                    <div className={`absolute inset-0 bg-gradient-to-br ${exp.companyColor} opacity-0 group-hover:opacity-20 transition-opacity duration-500`} />
+                    <div className={`absolute inset-0 bg-gradient-to-br opacity-0 group-hover:opacity-20 transition-opacity duration-500`} />
                   </motion.div>
                 </div>
 
@@ -266,7 +281,7 @@ export default function ExperienceSection() {
               whileHover={{ scale: 1.05, y: -5 }}
               className="group p-6 md:p-8 rounded-xl md:rounded-2xl bg-gradient-to-br from-blue-50/50 to-blue-100/30 dark:from-blue-950/20 dark:to-blue-900/10 border border-blue-200/30 dark:border-blue-800/20 hover:border-blue-300/50 dark:hover:border-blue-600/30 transition-all duration-500"
             >
-              <div className="text-4xl md:text-5xl font-bold text-blue-600 dark:text-blue-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">5+</div>
+              <div className="text-4xl md:text-5xl font-bold text-blue-600 dark:text-blue-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">12+</div>
               <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">Years Experience</div>
             </motion.div>
 
@@ -274,7 +289,7 @@ export default function ExperienceSection() {
               whileHover={{ scale: 1.05, y: -5 }}
               className="group p-6 md:p-8 rounded-xl md:rounded-2xl bg-gradient-to-br from-green-50/50 to-green-100/30 dark:from-green-950/20 dark:to-green-900/10 border border-green-200/30 dark:border-green-800/20 hover:border-green-300/50 dark:hover:border-green-600/30 transition-all duration-500"
             >
-              <div className="text-4xl md:text-5xl font-bold text-green-600 dark:text-green-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">50+</div>
+              <div className="text-4xl md:text-5xl font-bold text-green-600 dark:text-green-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">10+</div>
               <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">Projects Completed</div>
             </motion.div>
 
@@ -282,7 +297,7 @@ export default function ExperienceSection() {
               whileHover={{ scale: 1.05, y: -5 }}
               className="group p-6 md:p-8 rounded-xl md:rounded-2xl bg-gradient-to-br from-purple-50/50 to-purple-100/30 dark:from-purple-950/20 dark:to-purple-900/10 border border-purple-200/30 dark:border-purple-800/20 hover:border-purple-300/50 dark:hover:border-purple-600/30 transition-all duration-500 sm:col-span-2 lg:col-span-1"
             >
-              <div className="text-4xl md:text-5xl font-bold text-purple-600 dark:text-purple-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">91%</div>
+              <div className="text-4xl md:text-5xl font-bold text-purple-600 dark:text-purple-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">90%</div>
               <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">Success Rate</div>
             </motion.div>
           </div>

@@ -167,22 +167,20 @@ export default function OverviewSection() {
                   className="p-4 md:p-6 rounded-xl md:rounded-2xl bg-gradient-to-br from-blue-50/80 to-blue-100/50 dark:from-blue-950/30 dark:to-blue-900/20 backdrop-blur-sm border border-blue-200/50 dark:border-blue-800/30 shadow-xl flex flex-col"
                 >
                   <div className="flex items-start gap-3 md:gap-4 mb-3 md:mb-4">
-                    <div className="p-2 md:p-3 bg-blue-500 rounded-lg md:rounded-xl shadow-lg">
-                      <Icon icon="solar:code-bold" className="text-white w-5 md:w-6 h-5 md:h-6" width={24} height={24} />
-                    </div>
+                      <img src='deloitte.jpeg' width={52} height={52} className="rounded-full object-cover" />
                     <div>
-                      <h4 className="font-bold text-gray-900 dark:text-white text-base md:text-lg">Software Developer</h4>
-                      <p className="text-blue-600 dark:text-blue-400 font-medium text-sm md:text-base">Upwork Freelancer</p>
-                      <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400 mt-1">2020 — Present</p>
+                      <h4 className="font-bold text-gray-900 dark:text-white text-base md:text-lg">Senior Software Engineer</h4>
+                      <p className="text-blue-600 dark:text-blue-400 font-medium text-sm md:text-base">Deloitte Digital</p>
+                      <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400 mt-1">2023 — Present</p>
                     </div>
-                  </div>
+                  </div>  
                   <p className="text-gray-700 dark:text-gray-300 text-xs md:text-sm leading-relaxed mb-2 md:mb-3 flex-1">
-                    Delivering high-quality projects across diverse domains, specializing in web applications,
+                    Delivering AI-powered high-quality projects across diverse domains, specializing in web applications,
                     API development, and cloud integrations.
                   </p>
                   <div className="flex items-center gap-2 text-xs md:text-sm mt-auto">
                     <Icon icon="solar:star-bold" className="text-yellow-500 w-3 md:w-4 h-3 md:h-4" width={16} height={16} />
-                    <span className="font-semibold text-green-600 dark:text-green-400">Top Rated • 91% Success Score</span>
+                    <span className="font-semibold text-green-600 dark:text-green-400">Leadership, Agile, AI Integration</span>
                   </div>
                 </motion.div>
 
@@ -192,22 +190,19 @@ export default function OverviewSection() {
                   className="p-4 md:p-6 rounded-xl md:rounded-2xl bg-gradient-to-br from-green-50/80 to-green-100/50 dark:from-green-950/30 dark:to-green-900/20 backdrop-blur-sm border border-green-200/50 dark:border-green-800/30 shadow-xl flex flex-col"
                 >
                   <div className="flex items-start gap-3 md:gap-4 mb-3 md:mb-4">
-                    <div className="p-2 md:p-3 bg-green-500 rounded-lg md:rounded-xl shadow-lg">
-                      <Icon icon="solar:hospital-bold" className="text-white w-5 md:w-6 h-5 md:h-6" width={24} height={24} />
-                    </div>
+                    <img src='fanatics.jpeg' width={52} height={52} className="rounded-full object-cover" />
                     <div>
-                      <h4 className="font-bold text-gray-900 dark:text-white text-base md:text-lg">HIMS Master Trainer</h4>
-                      <p className="text-green-600 dark:text-green-400 font-medium text-sm md:text-base">Public Health Organization</p>
-                      <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400 mt-1">2019 — Present</p>
+                      <h4 className="font-bold text-gray-900 dark:text-white text-base md:text-lg">Senior Web developer</h4>
+                      <p className="text-green-600 dark:text-green-400 font-medium text-sm md:text-base">Fanatics</p>
+                      <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400 mt-1">2018 — 2023</p>
                     </div>
                   </div>
                   <p className="text-gray-700 dark:text-gray-300 text-xs md:text-sm leading-relaxed mb-2 md:mb-3 flex-1">
-                    Leading digital transformation in healthcare, integrating 45+ radiology machines and
-                    training teams on modern HIMS and PACS systems.
+                  Engineered a high-traffic sports betting platform delivering real-time event tracking, secure user authentication, and instant cash-out capabilities
                   </p>
                   <div className="flex items-center gap-2 text-xs md:text-sm mt-auto">
                     <Icon icon="solar:shield-check-bold" className="text-blue-500 w-3 md:w-4 h-3 md:h-4" width={16} height={16} />
-                    <span className="font-semibold text-blue-600 dark:text-blue-400">Healthcare IT Specialist</span>
+                    <span className="font-semibold text-blue-600 dark:text-blue-400">Entertainment IT Specialist</span>
                   </div>
                 </motion.div>
               </div>
@@ -237,18 +232,17 @@ export default function OverviewSection() {
                   </div>
                 </motion.a>
 
-                <motion.a
-                  href="https://portfolio-einar.vercel.app/"
+                <motion.div
                   whileHover={{ scale: 1.02, x: 4 }}
                   className="flex items-center gap-3 p-3 rounded-lg bg-white/70 dark:bg-gray-800/30 border border-white/20 dark:border-gray-700/30"
                 >
                   <div className="p-1 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-md shadow-md">
-                    <Icon icon="solar:global-bold" className="text-white w-4 h-4" width={16} height={16} />
+                    <Icon icon="twemoji:mobile-phone" className="text-white w-4 h-4" width={16} height={16} />
                   </div>
                   <div>
-                    <div className="text-sm font-bold text-gray-900 dark:text-white">einar.vercel.app</div>
+                    <div className="text-sm font-bold text-gray-900 dark:text-white">+1 (360) 268-8850</div>
                   </div>
-                </motion.a>
+                </motion.div>
 
                 <motion.div
                   whileHover={{ scale: 1.02, x: 4 }}

@@ -112,7 +112,7 @@ const TestimonialCard = ({ testimonial, index, isHovered, onHover }: Testimonial
           <div className="relative mb-2 flex  items-center justify-between">
             <div className={`w-12 h-12 bg-gradient-to-br ${borderGradient} rounded-2xl flex items-center justify-center mb-4 shadow-lg`}>
               <Icon
-                icon="gravity-ui:quote-open"
+                icon="streamline-stickies-color:education-degree-duo"
                 className="text-white text-3xl"
               />
             </div>
@@ -188,14 +188,14 @@ const FeaturedTestimonial = ({ testimonial }: FeaturedTestimonialProps) => (
       <div className="relative mb-2 flex items-center justify-between">
         <div className={`w-12 h-12 bg-gradient-to-br from-amber-400 to-sky-500 rounded-2xl flex items-center justify-center mb-4 shadow-lg`}>
           <Icon
-            icon="gravity-ui:quote-open"
+            icon="tdesign:education-filled"
             className="text-white text-3xl"
           />
         </div>
         <div className="text-center mb-6">
           <span className="inline-flex items-center gap-2 px-4 py-2 bg-sky-100 dark:bg-blue-900/30 text-sky-700 dark:text-blue-400 rounded-full text-sm font-medium">
             <Icon icon="solar:star-bold" width={16} height={16} />
-            Featured Review
+            Master's Degree 
           </span>
         </div>
 
@@ -204,12 +204,12 @@ const FeaturedTestimonial = ({ testimonial }: FeaturedTestimonialProps) => (
 
       {/* Quote */}
       <blockquote className="text-center text-xl md:text-2xl text-gray-700 dark:text-gray-300 leading-relaxed font-medium mb-8">
-        {testimonial.content}
+        "Pursued advanced studies in Computer Science with focus on machine learning and software engineering"
       </blockquote>
 
       {/* Rating with Animation */}
       <div className="flex items-center justify-center gap-1 mb-6">
-        {Array.from({ length: testimonial.rating }).map((_, i) => (
+        {Array.from({ length: 4 }).map((_, i) => (
           <motion.div
             key={i}
             initial={{ opacity: 0, scale: 0 }}
@@ -223,22 +223,19 @@ const FeaturedTestimonial = ({ testimonial }: FeaturedTestimonialProps) => (
           </motion.div>
         ))}
         <span className="ml-2 text-sm font-medium text-gray-600 dark:text-gray-400">
-          {testimonial.rating}.0
+          4.0
         </span>
       </div>
 
       {/* Author */}
       <div className="flex items-center justify-center gap-4">
-        <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
-          <span className="text-white text-xl font-bold">{testimonial.avatar}</span>
-        </div>
+        <img src='tokyo.png' width={100} height={100} />
         <div className="text-center">
-          <div className="font-bold text-gray-900 dark:text-white text-lg">
-            {testimonial.author}
+          <div className="font-bold text-gray-900 dark:text-white text-3xl">
+            The University of 
+            Tokyo
           </div>
-          <div className="text-gray-600 dark:text-gray-400">
-            {testimonial.role} at {testimonial.company}
-          </div>
+
 
         </div>
       </div>
@@ -246,7 +243,7 @@ const FeaturedTestimonial = ({ testimonial }: FeaturedTestimonialProps) => (
   </motion.div>
 );
 
-export default function TestimonialsSection() {
+export default function EducationSection() {
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
   const featuredTestimonial = testimonials.find(t => t.featured);
   const otherTestimonials = testimonials.filter(t => !t.featured);
@@ -257,7 +254,7 @@ export default function TestimonialsSection() {
 
   return (
     <motion.section
-      id="testimonials"
+      id="education"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
@@ -273,10 +270,9 @@ export default function TestimonialsSection() {
 
       <div className="relative z-10">
         <SectionHeader
-          tagText="Client Stories"
+          tagText="Education Stories"
           tagIcon="solar:users-group-rounded-outline"
-          heading="Testimonials Wall"
-          description="Real feedback from real clients who trusted me with their projects"
+          heading="Degrees Received"
           showUnderline={false}
           centered={true}
         />
@@ -285,32 +281,6 @@ export default function TestimonialsSection() {
         <div className="mb-16">
           <FeaturedTestimonial testimonial={featuredTestimonial} />
         </div>
-
-        {/* Testimonials Grid */}
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
-              Client Testimonials
-            </h3>
-            <p className="text-gray-600 dark:text-gray-400">
-              Honest feedback from clients I&apos;ve had the pleasure to work with
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-            {otherTestimonials.map((testimonial, index) => (
-              <TestimonialCard
-                key={index}
-                testimonial={testimonial}
-                index={index}
-                isHovered={hoveredCard}
-                onHover={setHoveredCard}
-              />
-            ))}
-          </div>
-        </div>
-
-
       </div>
     </motion.section>
   );
