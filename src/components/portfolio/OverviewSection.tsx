@@ -115,7 +115,7 @@ export default function OverviewSection() {
                       A passionate <span className="font-bold text-blue-600 dark:text-blue-400">Full Stack Developer</span> and
                       <span className="font-bold text-purple-600 dark:text-purple-400">
                         &nbsp; AI enthusiast</span> with
-                      <span className="font-bold text-green-600 dark:text-green-400"> 5+ years</span> of experience crafting
+                      <span className="font-bold text-green-600 dark:text-green-400"> 12+ years</span> of experience crafting
                       digital experiences that users love.
                     </p>
                   </div>
@@ -141,7 +141,7 @@ export default function OverviewSection() {
                       Core Technologies
                     </h4>
                     <div className="flex flex-wrap gap-2 md:gap-3">
-                      {["AI Integration", "React", "Next.js", "TypeScript", "Node.js", "Python", "AWS", "UI/UX Design", "Healthcare IT"].map((skill, index) => (
+                      {["AI Integration", "Leadership", "Agile", "React", "Next.js", "TypeScript", "Node.js", "Python", "AWS", "UI/UX Design"].map((skill, index) => (
                         <motion.span
                           key={skill}
                           initial={{ opacity: 0, scale: 0 }}
@@ -224,7 +224,7 @@ export default function OverviewSection() {
               </h4>
               <div className="space-y-3">
                 <motion.a
-                  href="mailto:mramazan1@yahoo.com"
+                  href="montalvoeinar669@gmail.com"
                   whileHover={{ scale: 1.02, x: 4 }}
                   whileTap={{ scale: 0.98 }}
                   className="flex items-center gap-3 p-3 rounded-lg bg-white/70 dark:bg-gray-800/30 hover:bg-white/90 dark:hover:bg-gray-800/50 transition-all duration-300 group border border-white/20 dark:border-gray-700/30"
@@ -233,11 +233,12 @@ export default function OverviewSection() {
                     <Icon icon="solar:letter-bold" className="text-white w-4 h-4" width={16} height={16} />
                   </div>
                   <div>
-                    <div className="text-sm font-bold text-gray-900 dark:text-white break-all">mramazan1@yahoo.com</div>
+                    <div className="text-sm font-bold text-gray-900 dark:text-white break-all">montalvoeinar669@gmail.com</div>
                   </div>
                 </motion.a>
 
-                <motion.div
+                <motion.a
+                  href="https://portfolio-einar.vercel.app/"
                   whileHover={{ scale: 1.02, x: 4 }}
                   className="flex items-center gap-3 p-3 rounded-lg bg-white/70 dark:bg-gray-800/30 border border-white/20 dark:border-gray-700/30"
                 >
@@ -245,9 +246,9 @@ export default function OverviewSection() {
                     <Icon icon="solar:global-bold" className="text-white w-4 h-4" width={16} height={16} />
                   </div>
                   <div>
-                    <div className="text-sm font-bold text-gray-900 dark:text-white">mramazan.dev</div>
+                    <div className="text-sm font-bold text-gray-900 dark:text-white">einar.vercel.app</div>
                   </div>
-                </motion.div>
+                </motion.a>
 
                 <motion.div
                   whileHover={{ scale: 1.02, x: 4 }}
@@ -257,7 +258,7 @@ export default function OverviewSection() {
                     <Icon icon="solar:map-point-bold" className="text-white w-4 h-4" width={16} height={16} />
                   </div>
                   <div>
-                    <div className="text-sm font-bold text-gray-900 dark:text-white">Islamabad, Pakistan</div>
+                    <div className="text-sm font-bold text-gray-900 dark:text-white">Seattle, WA</div>
                   </div>
                 </motion.div>
               </div>
@@ -271,9 +272,9 @@ export default function OverviewSection() {
               </h4>
               <div className="space-y-4">
                 {[
-                  { icon: "solar:star-bold", text: "Top Rated on Upwork", color: "text-yellow-600" },
+                  { icon: "solar:star-bold", text: "Start-up veteran", color: "text-yellow-600" },
                   { icon: "solar:cpu-bolt-bold-duotone", text: "Expert in AI Integration", color: "text-blue-600" },
-                  { icon: "solar:code-square-bold", text: "50+ Projects Delivered", color: "text-green-600" },
+                  { icon: "solar:code-square-bold", text: "10+ Projects Delivered", color: "text-green-600" },
                 ].map((achievement, index) => (
                   <motion.div
                     key={index}

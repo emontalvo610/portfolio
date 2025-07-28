@@ -10,9 +10,10 @@ export default function TypewriterRole() {
 
   const roles = [
     "Full Stack Developer",
+    "AI Enthusiast",
+    "Front End Specialist",
     "Software Engineer",
     "Systems Designer",
-    "AI Enthusiast"
   ];
 
   // Typewriter effect

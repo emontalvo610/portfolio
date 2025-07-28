@@ -255,9 +255,9 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 **Einar Montalvo**
 
 - Portfolio: [https://mramazan.dev](https://mramazan.dev)
-- GitHub: [@lightify97](https://github.com/lightify97)
+- GitHub: [@lightify97](https://github.com/emontalvo610)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/m-ramazan)
-- Email: mramazan1@yahoo.com
+- Email: montalvoeinar669@gmail.com
 
 ## 🙏 Acknowledgments
 

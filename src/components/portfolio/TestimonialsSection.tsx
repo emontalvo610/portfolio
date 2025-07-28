@@ -272,7 +272,6 @@ export default function TestimonialsSection() {
       </div>
 
       <div className="relative z-10">
-        {/* Header */}
         <SectionHeader
           tagText="Client Stories"
           tagIcon="solar:users-group-rounded-outline"
