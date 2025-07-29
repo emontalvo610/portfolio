@@ -39,7 +39,7 @@ const projects = [
     clientType: "AI Industry"
   },
   {
-    title: "Server Robotics",
+    title: "Serve Robotics",
     subtitle: "Real-Time Robot Fleet Management Platform",
     description: "A comprehensive robotics tracking and management platform that enables real-time monitoring of autonomous service robots. Features advanced mapping capabilities for tracking robot movements, status monitoring, and fleet optimization across multiple deployment locations.",
     features: [
