@@ -8,36 +8,68 @@ import SectionHeader from "./SectionHeader";
 const projects = [
   {
     title: "Athina.ai",
-    subtitle: "Professional Online Checkers Platform",
-    description: "A comprehensive multiplayer American checkers platform designed for competitive play with real-time communication capabilities. Currently undergoing official recognition process with the American Checkers Federation (ACF).",
+    subtitle: "Enterprise LLM Development & Monitoring Platform",
+    description: "A production-grade platform enabling teams to build, test, and monitor LLM-powered applications at scale. Serving 50+ enterprise clients with comprehensive tools for prompt engineering, multi-model orchestration, and real-time performance monitoring across 100M+ daily API calls.",
     features: [
-      "Real-time multiplayer gameplay with WebSocket technology",
-      "Advanced drag-and-drop game mechanics using DnDKit",
-      "Live chat system with emoji support and moderation",
-      "Player ranking and tournament management system",
-      "Spectator mode with real-time game observation",
-      "Mobile-responsive design for cross-platform play",
-      "Game replay and analysis tools",
-      "Social features including friend lists and challenges"
+      "Multi-model orchestration supporting OpenAI GPT-4, Claude, PaLM, Llama, and Mistral",
+      "Collaborative prompt engineering workspace with version control and A/B testing",
+      "Automated evaluation framework with hallucination detection and quality scoring",
+      "Real-time monitoring dashboard tracking token usage, latency, and model drift",
+      "Intelligent routing based on cost, latency, and performance requirements",
+      "Streaming response handling for real-time LLM interactions",
+      "Custom metrics for semantic similarity and response quality analysis",
+      "Event-driven architecture for processing large-scale LLM interactions"
     ],
     deliverables: [
-      "Fully functional web application deployed on production",
-      "Real-time multiplayer game engine",
-      "User authentication and profile management",
-      "Admin dashboard for game moderation",
-      "Tournament management system",
-      "Mobile-optimized responsive interface",
-      "Integration with payment systems for premium features"
+      "Full-stack web application deployed on AWS infrastructure",
+      "Multi-model LLM orchestration layer with intelligent routing",
+      "Prompt engineering workspace with collaborative editing",
+      "Automated testing and evaluation framework",
+      "Real-time analytics and monitoring dashboard",
+      "RESTful and GraphQL APIs for LLM provider integrations",
+      "Comprehensive documentation and open-source utilities"
     ],
-    tech: ["Next.js", "NextUI", "Tailwind CSS", "DnDKit", "Fastify", "Redis", "Socket.io", "PostgreSQL", "Prisma", "JWT Authentication", "Stripe API"],
-    github: "https://github.com",
-    live: "https://checkersvip.com",
+    tech: ["Next.js 15", "React 19", "TypeScript", "Tailwind CSS", "Node.js", "Python FastAPI", "PostgreSQL", "MongoDB", "Redis", "Apache Kafka", "AWS ECS", "Lambda", "D3.js", "LangChain", "WebSocket"],
+    live: "https://athina.ai",
     gradient: "from-blue-500 to-cyan-500",
     status: "Live",
-    category: "Web Application",
+    category: "AI/ML Platform",
     highlight: "Featured",
     timeline: "6 months",
-    clientType: "Gaming Industry"
+    clientType: "AI Industry"
+  },
+  {
+    title: "Server Robotics",
+    subtitle: "Real-Time Robot Fleet Management Platform",
+    description: "A comprehensive robotics tracking and management platform that enables real-time monitoring of autonomous service robots. Features advanced mapping capabilities for tracking robot movements, status monitoring, and fleet optimization across multiple deployment locations.",
+    features: [
+      "Real-time robot tracking with live position updates on interactive maps",
+      "Fleet status monitoring with health metrics and battery levels",
+      "Geofencing and zone management for robot navigation boundaries",
+      "Route optimization and path planning visualization",
+      "Alert system for maintenance needs and operational anomalies",
+      "Historical movement data analysis and heatmap generation",
+      "Multi-robot coordination and task assignment interface",
+      "Performance analytics dashboard with KPI tracking"
+    ],
+    deliverables: [
+      "Production-ready fleet management web application",
+      "Real-time robot tracking system with Mapbox integration",
+      "Administrative dashboard for fleet operations",
+      "Mobile-responsive interface for field technicians",
+      "RESTful API for robot data ingestion",
+      "Alert and notification system",
+      "Historical data analytics and reporting tools",
+      "Documentation for system integration"
+    ],
+    tech: ["Vue 3", "Pinia", "Mapbox GL JS", "TypeScript", "Vite", "Tailwind CSS", "Node.js", "WebSocket", "PostgreSQL", "Redis", "Express.js", "Chart.js"],
+    live: "https://www.serverobotics.com/",
+    gradient: "from-purple-500 to-pink-500",
+    status: "Live",
+    category: "IoT/Robotics Platform",
+    highlight: "Featured",
+    timeline: "8 months",
+    clientType: "Robotics Industry"
   },
   {
     title: "AskRudy.ai",
@@ -65,9 +97,8 @@ const projects = [
       "Analytics dashboard for usage tracking"
     ],
     tech: ["Next.js", "NextUI", "Vercel AI SDK", "React-PDF", "Firebase", "LangChain", "OpenAI GPT-4", "Pinecone", "Stripe", "Tesseract.js", "PDF.js", "Zustand"],
-    github: "https://github.com",
     live: "https://askrudy.ai",
-    gradient: "from-purple-500 to-pink-500",
+    gradient: "from-blue-500 to-cyan-500",
     status: "Live",
     category: "AI Platform",
     highlight: "Featured",
@@ -269,13 +300,6 @@ export default function ProjectsSection() {
 
                     {/* Action Buttons */}
                     <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
-                      <Link
-                        href={project.github}
-                        className="flex items-center justify-center gap-2 md:gap-3 px-4 py-2.5 md:px-6 md:py-3 bg-white/20 backdrop-blur-sm border border-white/30 text-white rounded-lg md:rounded-xl hover:bg-white/30 transition-all duration-300 text-sm font-medium shadow-lg hover:shadow-xl active:scale-95"
-                      >
-                        <Icon icon="solar:code-bold" width={18} height={18} className="md:w-5 md:h-5" />
-                        <span>View Repository</span>
-                      </Link>
 
                       <Link
                         href={project.live}
