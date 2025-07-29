@@ -7,7 +7,7 @@ import SectionHeader from "./SectionHeader";
 
 const projects = [
   {
-    title: "Checkersvip.com",
+    title: "Athina.ai",
     subtitle: "Professional Online Checkers Platform",
     description: "A comprehensive multiplayer American checkers platform designed for competitive play with real-time communication capabilities. Currently undergoing official recognition process with the American Checkers Federation (ACF).",
     features: [

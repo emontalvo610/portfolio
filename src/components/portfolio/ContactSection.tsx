@@ -40,12 +40,13 @@ export default function ContactSection() {
         serviceId,
         templateId,
         {
-          from_name: formData.name,
+          name: formData.name,
           from_email: formData.email,
           message: formData.message,
-          to_email: 'montalvoeinar669@gmail.com', // Your email
         },
-        publicKey
+        {
+          publicKey: publicKey
+        }
       );
 
       console.log('Email sent successfully:', result);
