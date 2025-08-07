@@ -115,7 +115,7 @@ export default function OverviewSection() {
                       A passionate <span className="font-bold text-blue-600 dark:text-blue-400">Full Stack Developer</span> and
                       <span className="font-bold text-purple-600 dark:text-purple-400">
                         &nbsp; AI enthusiast</span> with
-                      <span className="font-bold text-green-600 dark:text-green-400"> 12+ years</span> of experience crafting
+                      <span className="font-bold text-green-600 dark:text-green-400"> 10+ years</span> of experience crafting
                       digital experiences that users love.
                     </p>
                   </div>
@@ -167,10 +167,10 @@ export default function OverviewSection() {
                   className="p-4 md:p-6 rounded-xl md:rounded-2xl bg-gradient-to-br from-blue-50/80 to-blue-100/50 dark:from-blue-950/30 dark:to-blue-900/20 backdrop-blur-sm border border-blue-200/50 dark:border-blue-800/30 shadow-xl flex flex-col"
                 >
                   <div className="flex items-start gap-3 md:gap-4 mb-3 md:mb-4">
-                      <img src='deloitte.jpeg' width={52} height={52} className="rounded-full object-cover" />
+                      <img src='perplexity.png' width={52} height={52} className="rounded-full object-cover" />
                     <div>
                       <h4 className="font-bold text-gray-900 dark:text-white text-base md:text-lg">Senior Software Engineer</h4>
-                      <p className="text-blue-600 dark:text-blue-400 font-medium text-sm md:text-base">Deloitte Digital</p>
+                      <p className="text-blue-600 dark:text-blue-400 font-medium text-sm md:text-base">Perplexity</p>
                       <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400 mt-1">2023 — Present</p>
                     </div>
                   </div>  
@@ -190,11 +190,11 @@ export default function OverviewSection() {
                   className="p-4 md:p-6 rounded-xl md:rounded-2xl bg-gradient-to-br from-green-50/80 to-green-100/50 dark:from-green-950/30 dark:to-green-900/20 backdrop-blur-sm border border-green-200/50 dark:border-green-800/30 shadow-xl flex flex-col"
                 >
                   <div className="flex items-start gap-3 md:gap-4 mb-3 md:mb-4">
-                    <img src='fanatics.jpeg' width={52} height={52} className="rounded-full object-cover" />
+                    <img src='foxyai.avif' width={52} height={52} className="rounded-full object-cover" />
                     <div>
                       <h4 className="font-bold text-gray-900 dark:text-white text-base md:text-lg">Senior Web developer</h4>
-                      <p className="text-green-600 dark:text-green-400 font-medium text-sm md:text-base">Fanatics</p>
-                      <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400 mt-1">2018 — 2023</p>
+                      <p className="text-green-600 dark:text-green-400 font-medium text-sm md:text-base">FoxyAI</p>
+                      <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400 mt-1">2022 — 2023</p>
                     </div>
                   </div>
                   <p className="text-gray-700 dark:text-gray-300 text-xs md:text-sm leading-relaxed mb-2 md:mb-3 flex-1">

@@ -7,51 +7,77 @@ import SectionHeader from "./SectionHeader";
 const experience = [
   {
     role: "Senior Full Stack Engineer",
-    company: "Deloitte Digital",
-    period: "February 2023 — Present",
+    company: "Perplexity",
+    period: "October 2023 — July 2025",
     type: "Remote",
-    companyIcon: "deloitte.jpeg",
+    companyIcon: "perplexity.png",
     companyColor: "from-green-500 to-green-600",
-    description: "Orchestrated end-to-end development of AI-powered applications for enterprise clients, delivering complete solutions from intuitive frontends to scalable backend systems and ML model integration.",
+    description: "Led frontend development for AI-powered search engine, enhancing the conversational interface and real-time answer generation system that serves millions of users seeking accurate, cited information.",
     achievements: [
-      "Built full-stack AI chat applications with Next.js 15 and Python FastAPI serving GPT-4/Claude LLMs",
-      "Developed RAG systems with vector databases handling 10M+ daily queries",
-      "Architected micro-frontend applications with microservices enabling independent deployment across 5 teams",
-      "Implemented event-driven architectures processing 1TB+ daily data with 50K requests/second"
+      "Architected real-time answer streaming interface using React and Server-Sent Events, reducing perceived latency by 60% and enabling progressive answer rendering with citation highlighting",
+      "Built advanced citation system with inline source previews, domain verification badges, and credibility scoring, improving user trust metrics by 35%",
+      "Developed interactive follow-up question suggestions using context-aware AI, increasing user engagement and session depth by 45%",
+      "Implemented conversation threading and search history features with optimistic UI updates and offline support using IndexedDB and service workers",
+      "Created specialized search modes (Academic, Writing, Code) with custom UI components and tailored prompt engineering, adopted by 2M+ users",
+      "Optimized search result rendering with virtualization and lazy loading, handling 10K+ token responses while maintaining 60fps scrolling performance",
+      "Led migration to Next.js 15 App Router with streaming SSR, improving Core Web Vitals scores by 40% and SEO visibility for shared answers"
     ],
-    technologies: ["Next.js", "React", "TypeScript", "Python", "FastAPI", "PostgreSQL", "Redis", "AWS", "Kafka", "Docker", "Kubernetes", "GPT-4", "Claude"]
+    technologies: ["React", "Next.js 15", "TypeScript", "Server-Sent Events", "TanStack Query", "Tailwind CSS", "Framer Motion", "IndexedDB", "Service Workers", "Python", "FastAPI", "Redis", "PostgreSQL", "OpenAI API", "Web Vitals"]
   },
   {
-    role: "Senior Web Developer",
-    company: "Fanatics",
-    period: "February 2018 — February 2023",
-    type: "Hybrid",
+    role: "Full Stack Developer",
+    company: "FoxyAI",
+    period: "September 2022 — October 2023",
+    type: "Remote",
     companyColor: "from-blue-500 to-blue-600",
-    companyIcon: "fanatics.jpeg",
-    description: "Engineered comprehensive sports betting platform delivering seamless user experiences with real-time data updates, secure transactions, and scalable backend systems serving millions of users.",
+    companyIcon: "foxyai.avif",
+    description: "Built AI-powered property intelligence platform using computer vision and ML to analyze property images, detect damage, and generate comprehensive reports for real estate professionals processing 10K+ properties daily.",
     achievements: [
-      "Developed betting features with React/Next.js and Node.js processing 500K+ events/minute",
-      "Architected Polling/Websocket handling 100K+ concurrent users with sub-50ms response times",
-      "Built enterprise component library with 50+ reusable React components and 60% load time reduction",
-      "Implemented multi-layer caching strategy achieving 95% cache hit rate for dynamic content"
+      "Built AI-powered property intelligence platform using computer vision and ML to analyze property images, detect damage, and generate comprehensive PDF reports for real estate professionals",
+      "Integrated Zillow API with custom ML models to create automated property assessment tool processing 10K+ properties daily with 95% accuracy",
+      "Deployed containerized microservices on AWS ECS with auto-scaling policies, handling 10x traffic spikes during peak real estate seasons without performance degradation",
+      "Implemented PDF generation pipeline using Node.js and Puppeteer, creating customizable reports with charts, images, and AI-generated insights",
+      "Set up monitoring and alerting using DataDog APM, Sentry for error tracking, and custom CloudWatch dashboards, reducing MTTR from hours to minutes",
+      "Established testing pyramid with unit tests (Jest), integration tests (Supertest), and E2E tests (Cypress), achieving 80% code coverage and catching 95% of bugs pre-production"
     ],
-    technologies: ["React", "Next.js", "Node.js", "Nest.js", "GraphQL", "PostgreSQL", "Redis", "WebSocket", "TypeScript", "Storybook", "AWS", "Docker"]
+    technologies: ["React", "Node.js", "Computer Vision", "ML Models", "AWS ECS", "Docker", "Puppeteer", "DataDog", "Sentry", "CloudWatch", "Jest", "Cypress", "Supertest", "PostgreSQL"]
   },
   {
-    role: "Web Developer",
-    company: "Netflix",
-    period: "October 2013 — February 2018",
-    type: "On-site",
+    role: "Senior Frontend Engineer",
+    company: "Asian Logic",
+    period: "February 2017 — September 2022",
+    type: "Hybrid",
     companyColor: "from-red-500 to-red-600",
-    companyIcon: "netflix.jpeg",
-    description: "Worked on-site with Netflix teams to develop and enhance their streaming platform, contributing to both frontend player experiences and backend content delivery systems.",
+    companyIcon: "sportserve.avif",
+    description: "Led migration of legacy betting platforms to modern architecture, supporting millions of concurrent users across multiple brands (Dafabet, Nextbet, Zedbet) with real-time sports betting capabilities.",
     achievements: [
-      "Developed Netflix web player features using React/Angular with adaptive UI components",
-      "Built recommendation engine integration layer with Java Spring Boot handling billions of records",
-      "Implemented complete features including personalized homepage and continue watching functionality",
-      "Optimized frontend bundle sizes reducing initial load time by 40% and API response times by 50%"
+      "Led migration of legacy Backbone.js betting platform to Next.js with SSR, improving performance by 80% and supporting millions of concurrent users during major sporting events",
+      "Architected multi-brand theming system supporting Dafabet, Nextbet, and Zedbet from single codebase, reducing deployment time by 90% using 'build once, deploy many' approach",
+      "Built real-time sports betting interface handling 500K+ odds updates/minute using WebSocket connections and efficient React state management",
+      "Implemented blue-green deployment strategy with NGINX load balancers and health checks, achieving zero-downtime deployments during critical betting events",
+      "Optimized performance using CDN and reverse proxy caching (NGINX, Varnish), achieving sub-second load times and 99.9% uptime during peak traffic",
+      "Created load testing framework using K6 and JMeter, simulating 100K concurrent users to identify bottlenecks and optimize infrastructure for major sporting events",
+      "Established feature flag system using LaunchDarkly for gradual rollouts and A/B testing, enabling safe experimentation without impacting user experience"
     ],
-    technologies: ["React", "Angular", "Java", "Spring Boot", "Cassandra", "Redis", "D3.js", "Webpack", "REST APIs", "CDN", "A/B Testing"]
+    technologies: ["React", "Next.js", "Backbone.js", "WebSocket", "NGINX", "Varnish", "CDN", "LaunchDarkly", "K6", "JMeter", "Node.js", "Redis", "Blue-Green Deployment"]
+  },
+  {
+    role: "Frontend Engineer",
+    company: "Meta",
+    period: "October 2015 — February 2017",
+    type: "On-site",
+    companyColor: "from-blue-500 to-blue-600",
+    companyIcon: "meta.png",
+    description: "Contributed to Facebook Profile redesign serving 2B+ users, transitioning from Timeline to single-column layout while building performant UI components for News Feed with advanced optimization strategies.",
+    achievements: [
+      "Contributed to Facebook Profile redesign serving 2B+ users, transitioning from Timeline to single-column layout using React and custom framework",
+      "Built performant UI components for News Feed using React, achieving 60fps scrolling with virtualization and intelligent rendering strategies",
+      "Developed A/B testing framework for rapid experimentation, enabling data-driven decisions that improved user engagement by 25%",
+      "Implemented automated performance testing using Lighthouse CI and custom metrics, blocking deployments that degraded Core Web Vitals below thresholds",
+      "Participated in on-call rotation managing production incidents, improving system reliability through runbooks, monitoring dashboards, and post-mortem processes",
+      "Contributed to internal testing tools enabling engineers to write visual regression tests, reducing UI bugs in production by 60%"
+    ],
+    technologies: ["React", "Custom Framework", "A/B Testing", "Lighthouse CI", "Performance Optimization", "Visual Regression Testing", "JavaScript", "CSS", "Internal Tools"]
   }
 ];
 
@@ -281,7 +307,7 @@ export default function ExperienceSection() {
               whileHover={{ scale: 1.05, y: -5 }}
               className="group p-6 md:p-8 rounded-xl md:rounded-2xl bg-gradient-to-br from-blue-50/50 to-blue-100/30 dark:from-blue-950/20 dark:to-blue-900/10 border border-blue-200/30 dark:border-blue-800/20 hover:border-blue-300/50 dark:hover:border-blue-600/30 transition-all duration-500"
             >
-              <div className="text-4xl md:text-5xl font-bold text-blue-600 dark:text-blue-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">12+</div>
+              <div className="text-4xl md:text-5xl font-bold text-blue-600 dark:text-blue-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">10+</div>
               <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">Years Experience</div>
             </motion.div>
 
