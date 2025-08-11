@@ -167,10 +167,10 @@ export default function OverviewSection() {
                   className="p-4 md:p-6 rounded-xl md:rounded-2xl bg-gradient-to-br from-blue-50/80 to-blue-100/50 dark:from-blue-950/30 dark:to-blue-900/20 backdrop-blur-sm border border-blue-200/50 dark:border-blue-800/30 shadow-xl flex flex-col"
                 >
                   <div className="flex items-start gap-3 md:gap-4 mb-3 md:mb-4">
-                      <img src='perplexity.png' width={52} height={52} className="rounded-full object-cover" />
+                      <img src='yellow.svg' width={52} height={52} className="rounded-full object-cover" />
                     <div>
                       <h4 className="font-bold text-gray-900 dark:text-white text-base md:text-lg">Software Engineer</h4>
-                      <p className="text-blue-600 dark:text-blue-400 font-medium text-sm md:text-base">Perplexity</p>
+                      <p className="text-blue-600 dark:text-blue-400 font-medium text-sm md:text-base">Yellow Systems</p>
                       <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400 mt-1">2023 — Present</p>
                     </div>
                   </div>  

@@ -7,10 +7,10 @@ import SectionHeader from "./SectionHeader";
 const experience = [
   {
     role: "Senior Full Stack Engineer",
-    company: "Perplexity",
+    company: "Yellow Systems",
     period: "October 2023 — July 2025",
     type: "Remote",
-    companyIcon: "perplexity.png",
+    companyIcon: "yellow.svg",
     companyColor: "from-green-500 to-green-600",
     description: "Led frontend development for AI-powered search engine, enhancing the conversational interface and real-time answer generation system that serves millions of users seeking accurate, cited information.",
     achievements: [
