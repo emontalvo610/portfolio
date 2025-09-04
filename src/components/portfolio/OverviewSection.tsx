@@ -167,16 +167,15 @@ export default function OverviewSection() {
                   className="p-4 md:p-6 rounded-xl md:rounded-2xl bg-gradient-to-br from-blue-50/80 to-blue-100/50 dark:from-blue-950/30 dark:to-blue-900/20 backdrop-blur-sm border border-blue-200/50 dark:border-blue-800/30 shadow-xl flex flex-col"
                 >
                   <div className="flex items-start gap-3 md:gap-4 mb-3 md:mb-4">
-                      <img src='yellow.svg' width={52} height={52} className="rounded-full object-cover" />
+                      <img src='inoxoft.jpg' width={52} height={52} className="rounded-full object-cover" />
                     <div>
                       <h4 className="font-bold text-gray-900 dark:text-white text-base md:text-lg">Software Engineer</h4>
-                      <p className="text-blue-600 dark:text-blue-400 font-medium text-sm md:text-base">Yellow Systems</p>
-                      <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400 mt-1">2023 — Present</p>
+                      <p className="text-blue-600 dark:text-blue-400 font-medium text-sm md:text-base">Inoxoft</p>
+                      <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400 mt-1">2022 — Present</p>
                     </div>
                   </div>  
                   <p className="text-gray-700 dark:text-gray-300 text-xs md:text-sm leading-relaxed mb-2 md:mb-3 flex-1">
-                    Delivering AI-powered high-quality projects across diverse domains, specializing in web applications,
-                    API development, and cloud integrations.
+                  Delivering high-quality startup solutions at Inoxoft, leading React/Next.js builds, optimizing APIs, databases, and CI/CD for speed and security.
                   </p>
                   <div className="flex items-center gap-2 text-xs md:text-sm mt-auto">
                     <Icon icon="solar:star-bold" className="text-yellow-500 w-3 md:w-4 h-3 md:h-4" width={16} height={16} />
@@ -190,21 +189,19 @@ export default function OverviewSection() {
                   className="p-4 md:p-6 rounded-xl md:rounded-2xl bg-gradient-to-br from-green-50/80 to-green-100/50 dark:from-green-950/30 dark:to-green-900/20 backdrop-blur-sm border border-green-200/50 dark:border-green-800/30 shadow-xl flex flex-col"
                 >
                   <div className="flex items-start gap-3 md:gap-4 mb-3 md:mb-4">
-                    <img src='foxyai.avif' width={52} height={52} className="rounded-full object-cover" />
+                    <img src='canva.jpeg' width={52} height={52} className="rounded-full object-cover" />
                     <div>
-                      <h4 className="font-bold text-gray-900 dark:text-white text-base md:text-lg">Senior Web developer</h4>
-                      <p className="text-green-600 dark:text-green-400 font-medium text-sm md:text-base">FoxyAI</p>
-                      <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400 mt-1">2022 — 2023</p>
+                      <h4 className="font-bold text-gray-900 dark:text-white text-base md:text-lg">Front end developer</h4>
+                      <p className="text-green-600 dark:text-green-400 font-medium text-sm md:text-base">Canva</p>
+                      <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400 mt-1">2018 — 2022</p>
                     </div>
                   </div>
                   <p className="text-gray-700 dark:text-gray-300 text-xs md:text-sm leading-relaxed mb-2 md:mb-3 flex-1">
-
-  Built AI-powered property valuation interfaces processing millions of images, implementing computer vision workflows and interactive dashboards for insights
-
+                  Delivering high-impact frontend features at Canva, optimizing React dashboards and design editor for 60M+ users, driving scalable components
                   </p>
                   <div className="flex items-center gap-2 text-xs md:text-sm mt-auto">
                     <Icon icon="solar:shield-check-bold" className="text-blue-500 w-3 md:w-4 h-3 md:h-4" width={16} height={16} />
-                    <span className="font-semibold text-blue-600 dark:text-blue-400">Real Estate IT Specialist</span>
+                    <span className="font-semibold text-blue-600 dark:text-blue-400">Front end Specialist</span>
                   </div>
                 </motion.div>
               </div>

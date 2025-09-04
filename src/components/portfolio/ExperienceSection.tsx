@@ -6,80 +6,67 @@ import SectionHeader from "./SectionHeader";
 
 const experience = [
   {
-    role: "Senior Full Stack Engineer",
-    company: "Yellow Systems",
-    period: "October 2023 — July 2025",
+    role: "Senior Software Engineer",
+    company: "Inoxoft",
+    period: "May 2022 — August 2025",
     type: "Remote",
-    companyIcon: "yellow.svg",
-    companyColor: "from-green-500 to-green-600",
-    description: "Led frontend development for AI-powered search engine, enhancing the conversational interface and real-time answer generation system that serves millions of users seeking accurate, cited information.",
+    companyIcon: "inoxoft.jpg",
+    companyColor: "from-purple-500 to-purple-600",
+    description: "Consulting engineer for startup clients, leading frontend builds from scratch with a flagship focus on Ad.Net’s ad network dashboard.",
     achievements: [
-      "Architected real-time answer streaming interface using React and Server-Sent Events, reducing perceived latency by 60% and enabling progressive answer rendering with citation highlighting",
-      "Built advanced citation system with inline source previews, domain verification badges, and credibility scoring, improving user trust metrics by 35%",
-      "Developed interactive follow-up question suggestions using context-aware AI, increasing user engagement and session depth by 45%",
-      "Implemented conversation threading and search history features with optimistic UI updates and offline support using IndexedDB and service workers",
-      "Created specialized search modes (Academic, Writing, Code) with custom UI components and tailored prompt engineering, adopted by 2M+ users",
-      "Optimized search result rendering with virtualization and lazy loading, handling 10K+ token responses while maintaining 60fps scrolling performance",
-      "Led migration to Next.js 15 App Router with streaming SSR, improving Core Web Vitals scores by 40% and SEO visibility for shared answers"
+      "Built React/Next.js + TypeScript apps from zero to MVP in under 3 months, delivering rapid prototypes to production",
+      "Delivered Ad.Net campaign dashboard with charts, reporting, and RBAC, scaling to 10K+ advertiser campaigns",
+      "Designed PostgreSQL + Prisma schemas with normalized entities, keeping query latency consistently under 200ms",
+      "Styled platforms with TailwindCSS and MUI, creating 40+ Storybook-driven components reused across clients",
+      "Added WebSocket live updates, processing 50K+ campaign events daily with minimal lag",
+      "Secured APIs with OAuth2 and JWT, ensuring 100% protected endpoints and compliance for clients",
+      "Automated CI/CD pipelines on AWS ECS, reducing deploys from hours to 15 minutes with zero-downtime rollouts",
+      "Mentored 4 engineers through reviews, playbooks, and onboarding, improving delivery quality and team velocity"
     ],
-    technologies: ["React", "Next.js 15", "TypeScript", "Server-Sent Events", "TanStack Query", "Tailwind CSS", "Framer Motion", "IndexedDB", "Service Workers", "Python", "FastAPI", "Redis", "PostgreSQL", "OpenAI API", "Web Vitals"]
-  },
-  {
-    role: "Full Stack Developer",
-    company: "FoxyAI",
-    period: "September 2022 — October 2023",
-    type: "Remote",
-    companyColor: "from-blue-500 to-blue-600",
-    companyIcon: "foxyai.avif",
-    description: "Built AI-powered property intelligence platform using computer vision and ML to analyze property images, detect damage, and generate comprehensive reports for real estate professionals processing 10K+ properties daily.",
-    achievements: [
-      "Built AI-powered property intelligence platform using computer vision and ML to analyze property images, detect damage, and generate comprehensive PDF reports for real estate professionals",
-      "Integrated Zillow API with custom ML models to create automated property assessment tool processing 10K+ properties daily with 95% accuracy",
-      "Deployed containerized microservices on AWS ECS with auto-scaling policies, handling 10x traffic spikes during peak real estate seasons without performance degradation",
-      "Implemented PDF generation pipeline using Node.js and Puppeteer, creating customizable reports with charts, images, and AI-generated insights",
-      "Set up monitoring and alerting using DataDog APM, Sentry for error tracking, and custom CloudWatch dashboards, reducing MTTR from hours to minutes",
-      "Established testing pyramid with unit tests (Jest), integration tests (Supertest), and E2E tests (Cypress), achieving 80% code coverage and catching 95% of bugs pre-production"
-    ],
-    technologies: ["React", "Node.js", "Computer Vision", "ML Models", "AWS ECS", "Docker", "Puppeteer", "DataDog", "Sentry", "CloudWatch", "Jest", "Cypress", "Supertest", "PostgreSQL"]
+    technologies: ["React", "Next.js", "TypeScript", "PostgreSQL", "Prisma", "TailwindCSS", "MUI", "Storybook", "WebSocket", "OAuth2", "JWT", "AWS ECS", "CI/CD"]
   },
   {
     role: "Senior Frontend Engineer",
-    company: "Asian Logic",
-    period: "February 2017 — September 2022",
-    type: "Hybrid",
-    companyColor: "from-red-500 to-red-600",
-    companyIcon: "sportserve.avif",
-    description: "Led migration of legacy betting platforms to modern architecture, supporting millions of concurrent users across multiple brands (Dafabet, Nextbet, Zedbet) with real-time sports betting capabilities.",
+    company: "Canva",
+    period: "February 2018 — May 2022",
+    type: "Remote",
+    companyIcon: "canva.jpeg",
+    companyColor: "from-teal-500 to-teal-600",
+    description: "Focused on frontend feature development for Canva’s design editor and dashboards serving 60M+ monthly users.",
     achievements: [
-      "Led migration of legacy Backbone.js betting platform to Next.js with SSR, improving performance by 80% and supporting millions of concurrent users during major sporting events",
-      "Architected multi-brand theming system supporting Dafabet, Nextbet, and Zedbet from single codebase, reducing deployment time by 90% using 'build once, deploy many' approach",
-      "Built real-time sports betting interface handling 500K+ odds updates/minute using WebSocket connections and efficient React state management",
-      "Implemented blue-green deployment strategy with NGINX load balancers and health checks, achieving zero-downtime deployments during critical betting events",
-      "Optimized performance using CDN and reverse proxy caching (NGINX, Varnish), achieving sub-second load times and 99.9% uptime during peak traffic",
-      "Created load testing framework using K6 and JMeter, simulating 100K concurrent users to identify bottlenecks and optimize infrastructure for major sporting events",
-      "Established feature flag system using LaunchDarkly for gradual rollouts and A/B testing, enabling safe experimentation without impacting user experience"
+      "Built React 18 and TypeScript features for editor and dashboards powering daily design workflows",
+      "Migrated marketing site to Next.js ISR, cutting page load times by 60% and boosting SEO visibility by 45%",
+      "Created Recharts/TanStack dashboards enabling 200+ teams to track adoption, usage, and engagement",
+      "Added i18n and RTL support, expanding Canva into 20+ new languages in under six months",
+      "Shipped MUI and Storybook components reused across 15 squads",
+      "Improved P95 latency by 35% with memoization and virtualization",
+      "Boosted test coverage to 85% with Jest, React Testing Library, and Cypress",
+      "Enforced WCAG compliance, improving accessibility for 10M+ users"
     ],
-    technologies: ["React", "Next.js", "Backbone.js", "WebSocket", "NGINX", "Varnish", "CDN", "LaunchDarkly", "K6", "JMeter", "Node.js", "Redis", "Blue-Green Deployment"]
+    technologies: ["React 18", "Next.js ISR", "TypeScript", "Recharts", "TanStack", "MUI", "Storybook", "Jest", "RTL", "Cypress", "i18n", "Accessibility"]
   },
   {
-    role: "Frontend Engineer",
-    company: "Meta",
-    period: "October 2015 — February 2017",
+    role: "Software Engineer",
+    company: "Microsoft",
+    period: "October 2015 — February 2018",
     type: "On-site",
     companyColor: "from-blue-500 to-blue-600",
-    companyIcon: "meta.png",
-    description: "Contributed to Facebook Profile redesign serving 2B+ users, transitioning from Timeline to single-column layout while building performant UI components for News Feed with advanced optimization strategies.",
+    companyIcon: "microsoft.png",
+    description: "Contributed to the frontend of Google Ads dashboards, building UI libraries and optimizing performance at scale.",
     achievements: [
-      "Contributed to Facebook Profile redesign serving 2B+ users, transitioning from Timeline to single-column layout using React and custom framework",
-      "Built performant UI components for News Feed using React, achieving 60fps scrolling with virtualization and intelligent rendering strategies",
-      "Developed A/B testing framework for rapid experimentation, enabling data-driven decisions that improved user engagement by 25%",
-      "Implemented automated performance testing using Lighthouse CI and custom metrics, blocking deployments that degraded Core Web Vitals below thresholds",
-      "Participated in on-call rotation managing production incidents, improving system reliability through runbooks, monitoring dashboards, and post-mortem processes",
-      "Contributed to internal testing tools enabling engineers to write visual regression tests, reducing UI bugs in production by 60%"
+      "Built Angular + TypeScript components powering Ads dashboards",
+      "Created UI libraries reused by 12 teams, reducing duplication by 40%",
+      "Optimized dashboards with async rendering and virtualization, improving P95 load by 30%",
+      "Designed GraphQL endpoints, reducing network payloads by 50%",
+      "Strengthened QA with Jasmine + Protractor E2E tests, cutting regressions by 25%",
+      "Delivered responsive layouts with mobile parity for 500K+ users",
+      "Optimized queries with PostgreSQL and BigQuery, doubling reporting speed",
+      "Reduced incident resolution time from 90 minutes to 30 minutes in on-call rotation"
     ],
-    technologies: ["React", "Custom Framework", "A/B Testing", "Lighthouse CI", "Performance Optimization", "Visual Regression Testing", "JavaScript", "CSS", "Internal Tools"]
+    technologies: ["Angular", "TypeScript", "GraphQL", "PostgreSQL", "BigQuery", "Jasmine", "Protractor", "Async Rendering", "Virtualization", "Responsive Design"]
   }
 ];
+
 
 export default function ExperienceSection() {
   const containerVariants = {

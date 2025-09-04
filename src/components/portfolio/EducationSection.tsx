@@ -229,11 +229,10 @@ const FeaturedTestimonial = ({ testimonial }: FeaturedTestimonialProps) => (
 
       {/* Author */}
       <div className="flex items-center justify-center gap-4">
-        <img src='tokyo.png' width={100} height={100} />
+        <img src='UCLA.png' width={200} height={200} />
         <div className="text-center">
           <div className="font-bold text-gray-900 dark:text-white text-3xl">
-            The University of 
-            Tokyo
+          UCLA
           </div>
 
 

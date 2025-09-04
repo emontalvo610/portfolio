@@ -5,7 +5,39 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import SectionHeader from "./SectionHeader";
 
-const projects = [
+const projects = [{
+  title: "Ad.Net Dashboard",
+  subtitle: "Ad Network Campaign Management Platform",
+  description: "A full-featured advertising network dashboard enabling 10K+ advertisers to manage campaigns, track performance, and access real-time reporting. Designed for scalability, security, and rapid MVP delivery to production-ready solution.",
+  features: [
+    "Campaign management with role-based access control (RBAC)",
+    "Interactive dashboards with real-time charts and reporting",
+    "WebSocket-powered live updates processing 50K+ campaign events daily",
+    "Customizable filters and segmentation for advertiser insights",
+    "Responsive UI with TailwindCSS and MUI component library",
+    "Authentication and authorization via OAuth2 and JWT",
+    "Multi-tenant architecture supporting thousands of advertisers",
+    "CI/CD automation with zero-downtime deployments"
+  ],
+  deliverables: [
+    "MVP React/Next.js application delivered in under 3 months",
+    "Campaign dashboard with reporting and analytics",
+    "Reusable component library with 40+ Storybook-driven components",
+    "PostgreSQL + Prisma schema design optimized for low-latency queries",
+    "Secured REST APIs with OAuth2 and JWT authentication",
+    "Real-time WebSocket pipeline for campaign event ingestion",
+    "AWS ECS-based CI/CD pipeline reducing deploys to 15 minutes",
+    "Developer onboarding playbooks and team mentorship"
+  ],
+  tech: ["React", "Next.js", "TypeScript", "TailwindCSS", "MUI", "Storybook", "PostgreSQL", "Prisma", "WebSocket", "OAuth2", "JWT", "AWS ECS", "CI/CD"],
+  live:"https://opsplatform.ad.net",
+  gradient: "from-amber-500 to-orange-500",
+  status: "Live",
+  category: "AdTech Platform",
+  highlight: "Featured",
+  timeline: "2 years",
+  clientType: "Advertising Industry",
+},
   {
     title: "Athina.ai",
     subtitle: "Enterprise LLM Development & Monitoring Platform",
