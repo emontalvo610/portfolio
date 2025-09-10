@@ -6,64 +6,78 @@ import SectionHeader from "./SectionHeader";
 
 const experience = [
   {
-    role: "Senior Software Engineer",
+    role: "Staff Software Engineer",
     company: "Inoxoft",
-    period: "May 2022 — August 2025",
+    period: "May 2023 — August 2025",
     type: "Remote",
     companyIcon: "inoxoft.jpg",
     companyColor: "from-purple-500 to-purple-600",
-    description: "Consulting engineer for startup clients, leading frontend builds from scratch with a flagship focus on Ad.Net’s ad network dashboard.",
+    description: "Led end-to-end frontend and full-stack builds for startups, delivering investor-ready MVPs from scratch.",
     achievements: [
-      "Built React/Next.js + TypeScript apps from zero to MVP in under 3 months, delivering rapid prototypes to production",
-      "Delivered Ad.Net campaign dashboard with charts, reporting, and RBAC, scaling to 10K+ advertiser campaigns",
-      "Designed PostgreSQL + Prisma schemas with normalized entities, keeping query latency consistently under 200ms",
-      "Styled platforms with TailwindCSS and MUI, creating 40+ Storybook-driven components reused across clients",
-      "Added WebSocket live updates, processing 50K+ campaign events daily with minimal lag",
-      "Secured APIs with OAuth2 and JWT, ensuring 100% protected endpoints and compliance for clients",
-      "Automated CI/CD pipelines on AWS ECS, reducing deploys from hours to 15 minutes with zero-downtime rollouts",
-      "Mentored 4 engineers through reviews, playbooks, and onboarding, improving delivery quality and team velocity"
+      "Built React/Next.js and TypeScript apps from zero to MVP in less than 3 months, delivering fast prototypes to production",
+      "Designed RESTful APIs with Node.js (Express + TypeORM) and Python (FastAPI + SQLAlchemy)",
+      "Delivered Ad.Net campaign dashboard, scaling to over 10K advertiser campaigns with charts, reporting, and RBAC",
+      "Designed PostgreSQL and Prisma schemas, ensuring normalized entities and maintaining query latency under 200ms",
+      "Styled platforms with TailwindCSS and MUI, developing over 40 Storybook-driven components reused across clients",
+      "Implemented Kafka + WebSocket live updates, handling over 50K campaign events per day with minimal lag",
+      "Secured APIs with OAuth2 and JWT, achieving 100% protected endpoints and compliance for clients",
+      "Automated CI/CD using GitHub Actions and Docker to build and deploy containers to AWS ECS, reducing deployment time"
     ],
-    technologies: ["React", "Next.js", "TypeScript", "PostgreSQL", "Prisma", "TailwindCSS", "MUI", "Storybook", "WebSocket", "OAuth2", "JWT", "AWS ECS", "CI/CD"]
+    technologies: ["React", "Next.js", "TypeScript", "Node.js", "Express", "TypeORM", "Python", "FastAPI", "SQLAlchemy", "PostgreSQL", "Prisma", "Kafka", "WebSocket", "TailwindCSS", "MUI", "Storybook", "OAuth2", "JWT", "GitHub Actions", "Docker", "AWS ECS", "CI/CD"]
   },
   {
     role: "Senior Frontend Engineer",
-    company: "Canva",
-    period: "February 2018 — May 2022",
-    type: "Remote",
-    companyIcon: "canva.jpeg",
-    companyColor: "from-teal-500 to-teal-600",
-    description: "Focused on frontend feature development for Canva’s design editor and dashboards serving 60M+ monthly users.",
+    company: "Snowflake",
+    period: "November 2020 — May 2023",
+    type: "Hybrid",
+    companyIcon: "snowflake.png",
+    companyColor: "from-sky-500 to-sky-600",
+    description: "Built core Snowsight features including worksheets editor, interactive dashboard tiles, and virtualized result rendering.",
     achievements: [
-      "Built React 18 and TypeScript features for editor and dashboards powering daily design workflows",
-      "Migrated marketing site to Next.js ISR, cutting page load times by 60% and boosting SEO visibility by 45%",
-      "Created Recharts/TanStack dashboards enabling 200+ teams to track adoption, usage, and engagement",
-      "Added i18n and RTL support, expanding Canva into 20+ new languages in under six months",
-      "Shipped MUI and Storybook components reused across 15 squads",
-      "Improved P95 latency by 35% with memoization and virtualization",
-      "Boosted test coverage to 85% with Jest, React Testing Library, and Cypress",
-      "Enforced WCAG compliance, improving accessibility for 10M+ users"
+      "Implemented Snowsight Worksheets with React, TypeScript, and Redux, enabling inline SQL/Python editing and faster analyst workflows",
+      "Built dashboard tiles with ECharts, Canvas/SVG, and React to turn query results into shareable visualizations",
+      "Engineered virtualized result tables with React-Window and incremental REST fetching to keep large result sets responsive",
+      "Owned editor UX (autocomplete, multi-tab) with TypeScript and telemetry, reducing edit-to-run friction",
+      "Delivered data dashboards backed by Elasticsearch queries, used daily by 200+ internal teams",
+      "Raised frontend reliability with Jest, React Testing Library, Cypress, and CI — reducing regressions and increasing confidence",
+      "Partnered on API design with REST and server-side caching, cutting metadata round-trips and improving load times",
+      "Delivered accessibility and i18n with ARIA, RTL, and localization libraries, expanding usability globally"
     ],
-    technologies: ["React 18", "Next.js ISR", "TypeScript", "Recharts", "TanStack", "MUI", "Storybook", "Jest", "RTL", "Cypress", "i18n", "Accessibility"]
+    technologies: ["React", "TypeScript", "Redux", "ECharts", "Canvas", "SVG", "React-Window", "REST", "Elasticsearch", "Jest", "RTL", "Cypress", "CI/CD", "Accessibility", "i18n", "ARIA"]
+  },
+  {
+    role: "Software Engineer II",
+    company: "Microsoft",
+    period: "April 2018 — November 2020",
+    type: "On-site",
+    companyIcon: "microsoft.png",
+    companyColor: "from-blue-500 to-blue-600",
+    description: "Full-stack engineer on Windows Admin Center (Project Honolulu), Microsoft’s browser-based platform for managing Windows Server infrastructure.",
+    achievements: [
+      "Developed Angular + TypeScript dashboards for server health, roles, and performance monitoring",
+      "Built ASP.NET Core REST APIs to expose server management endpoints to the web UI",
+      "Designed SQL Server data models for logging, session storage, and historical metrics",
+      "Implemented role-based access control (RBAC) with Active Directory and OAuth2 integration",
+      "Strengthened QA with Jasmine + Protractor E2E tests, reducing production regressions by 25%"
+    ],
+    technologies: ["Angular", "TypeScript", "ASP.NET Core", "REST", "SQL Server", "RBAC", "Active Directory", "OAuth2", "Jasmine", "Protractor"]
   },
   {
     role: "Software Engineer",
-    company: "Microsoft",
-    period: "October 2015 — February 2018",
+    company: "Accenture",
+    period: "October 2015 — April 2018",
     type: "On-site",
-    companyColor: "from-blue-500 to-blue-600",
-    companyIcon: "microsoft.png",
-    description: "Contributed to the frontend of Google Ads dashboards, building UI libraries and optimizing performance at scale.",
+    companyIcon: "accenture.png",
+    companyColor: "from-gray-500 to-gray-600",
+    description: "Frontend engineer for a real-time ECG monitoring system integrated with a HIPAA-compliant AWS pipeline.",
     achievements: [
-      "Built Angular + TypeScript components powering Ads dashboards",
-      "Created UI libraries reused by 12 teams, reducing duplication by 40%",
-      "Optimized dashboards with async rendering and virtualization, improving P95 load by 30%",
-      "Designed GraphQL endpoints, reducing network payloads by 50%",
-      "Strengthened QA with Jasmine + Protractor E2E tests, cutting regressions by 25%",
-      "Delivered responsive layouts with mobile parity for 500K+ users",
-      "Optimized queries with PostgreSQL and BigQuery, doubling reporting speed",
-      "Reduced incident resolution time from 90 minutes to 30 minutes in on-call rotation"
+      "Built continuous, low-latency ECG visualizations with Angular and HTML5 Canvas, enabling real-time waveform rendering",
+      "Integrated front-end streaming with AWS-backed pipeline (WebSocket/HTTP to Kinesis/Lambda)",
+      "Hardened UI for PHI with secure session patterns, audit hooks, and access controls",
+      "Added test/observability stack (Jasmine/Karma, Cypress, telemetry) to track latency and workflows",
+      "Implemented memory-efficient ring buffer and requestAnimationFrame redraw strategy"
     ],
-    technologies: ["Angular", "TypeScript", "GraphQL", "PostgreSQL", "BigQuery", "Jasmine", "Protractor", "Async Rendering", "Virtualization", "Responsive Design"]
+    technologies: ["Angular", "Canvas", "AWS Kinesis", "AWS Lambda", "WebSocket", "HTTP", "Jasmine", "Karma", "Cypress", "Telemetry"]
   }
 ];
 
