@@ -5,7 +5,42 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import SectionHeader from "./SectionHeader";
 
-const projects = [{
+const projects = [
+  {
+    title: "Dafabet",
+    subtitle: "Next-Gen Sports Betting Platform",
+    description: "A large-scale, multi-market sports betting platform reimagined with modern front-end architecture, high-performance streaming, and regional customization. Migrated from legacy Backbone.js to Next.js (v15) with SSR, ISR, and React Server Components (RSC), integrated with Nginx, Varnish, and Cloudflare CDN for edge acceleration.",
+    features: [
+      "Server-Side Rendering (SSR) and Incremental Static Regeneration (ISR) for high-speed delivery",
+      "GraphQL + REST CMS integration for promotions, taxes, and localization management",
+      "Signals-based state management using Zotai with RTK and RTK Query for real-time updates",
+      "Multi-brand theming system using Shadcn UI, TailwindCSS, and ThemeProvider",
+      "Sub-20 ms render latency during 1M+ concurrent IPL sessions via WebSocket and long polling",
+      "CI/CD pipelines with Jest, Playwright, and React Testing Library achieving 75%+ coverage",
+      "Real-time odds streaming with BetGenius and Betradar integrations",
+      "Edge caching optimization with Nginx, Varnish, and Cloudflare CDN layers",
+      "Secure sandboxed live video widgets using HLS.js and custom JavaScript bridges"
+    ],
+    deliverables: [
+      "Production-grade Next.js betting platform deployed globally",
+      "Reusable UI theming and localization architecture for 10+ regions",
+      "Betslip Controller with high-frequency odds synchronization",
+      "GraphQL-backed CMS and content federation",
+      "Automated end-to-end testing suite with CI/CD pipelines",
+      "Real-time streaming infrastructure and monitoring dashboard",
+      "Multi-brand support for localized branding and layouts",
+      "Analytics and telemetry integration for performance optimization"
+    ],
+    tech: ["Next.js 15", "TypeScript", "TailwindCSS", "Shadcn UI", "Zotai", "Redux Toolkit", "GraphQL", "Varnish", "Nginx", "Cloudflare CDN", "WebSocket", "HLS.js", "Playwright", "Jest", "AWS"],
+    live: "https://dafabet.com",
+    gradient: "from-red-600 to-yellow-500",
+    status: "Live",
+    category: "Sports Betting & Gaming",
+    highlight: "Enterprise",
+    timeline: "2 years",
+    clientType: "Global iGaming & Entertainment"
+  },
+  {
   title: "Ad.Net Dashboard",
   subtitle: "Ad Network Campaign Management Platform",
   description: "A full-featured advertising network dashboard enabling 10K+ advertisers to manage campaigns, track performance, and access real-time reporting. Designed for scalability, security, and rapid MVP delivery to production-ready solution.",
@@ -35,7 +70,7 @@ const projects = [{
   status: "Live",
   category: "AdTech Platform",
   highlight: "Featured",
-  timeline: "2 years",
+  timeline: "1 year",
   clientType: "Advertising Industry",
 },
   {
@@ -71,7 +106,7 @@ const projects = [{
     clientType: "AI Industry"
   },
   {
-    title: "Serve Robotics",
+    title: "Coco Robotics Command Center",
     subtitle: "Real-Time Robot Fleet Management Platform",
     description: "A comprehensive robotics tracking and management platform that enables real-time monitoring of autonomous service robots. Features advanced mapping capabilities for tracking robot movements, status monitoring, and fleet optimization across multiple deployment locations.",
     features: [
@@ -95,7 +130,7 @@ const projects = [{
       "Documentation for system integration"
     ],
     tech: ["Vue 3", "Pinia", "Mapbox GL JS", "TypeScript", "Vite", "Tailwind CSS", "Node.js", "WebSocket", "PostgreSQL", "Redis", "Express.js", "Chart.js"],
-    live: "https://www.serverobotics.com/",
+    live: "https://www.cocodelivery.com/",
     gradient: "from-purple-500 to-pink-500",
     status: "Live",
     category: "IoT/Robotics Platform",
@@ -103,40 +138,6 @@ const projects = [{
     timeline: "8 months",
     clientType: "Robotics Industry"
   },
-  {
-    title: "AskRudy.ai",
-    subtitle: "AI-Powered Document Intelligence Platform",
-    description: "An advanced RAG-based AI chatbot that revolutionizes document interaction through multilingual translation and intelligent conversation capabilities. Features cutting-edge OpenAI multimodal technology for screenshot analysis and real-time text translation.",
-    features: [
-      "RAG (Retrieval-Augmented Generation) architecture for accurate responses",
-      "Multi-format document support (PDF, DOCX, TXT, images)",
-      "OpenAI GPT-4 Vision integration for screenshot analysis",
-      "Real-time multilingual translation (50+ languages)",
-      "Intelligent document chunking and vector embeddings",
-      "Conversational AI with context-aware responses",
-      "Document highlighting and annotation tools",
-      "Export capabilities for translations and summaries",
-      "Collaborative workspace for team document analysis"
-    ],
-    deliverables: [
-      "Production-ready AI chatbot platform",
-      "Document processing pipeline with OCR capabilities",
-      "Multi-language translation engine",
-      "User dashboard with document management",
-      "Subscription management with Stripe integration",
-      "API documentation and integration guides",
-      "Mobile-responsive Progressive Web App",
-      "Analytics dashboard for usage tracking"
-    ],
-    tech: ["Next.js", "NextUI", "Vercel AI SDK", "React-PDF", "Firebase", "LangChain", "OpenAI GPT-4", "Pinecone", "Stripe", "Tesseract.js", "PDF.js", "Zustand"],
-    live: "https://askrudy.ai",
-    gradient: "from-blue-500 to-cyan-500",
-    status: "Live",
-    category: "AI Platform",
-    highlight: "Featured",
-    timeline: "8 months",
-    clientType: "EdTech & Enterprise"
-  }
 ];
 
 export default function ProjectsSection() {
