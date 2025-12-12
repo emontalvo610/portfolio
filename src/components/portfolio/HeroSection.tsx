@@ -37,7 +37,6 @@ export default function HeroSection() {
         transition={{ duration: 0.8 }}
         className="relative z-10 max-w-4xl mx-auto px-6 text-center -mb-8"
       >
-
         {/* Name */}
         <motion.h1
           className="text-5xl md:text-6xl font-bold mb-4"
@@ -60,7 +59,8 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 0.6 }}
         >
-          Crafting exceptional digital experiences with clean code and thoughtful design
+          Crafting exceptional digital experiences with clean code and
+          thoughtful design
         </motion.p>
 
         {/* Social Links - keeping exactly the same */}
@@ -71,11 +71,30 @@ export default function HeroSection() {
           transition={{ delay: 1.0 }}
         >
           {[
-            { href: "https://github.com/emontalvo610", icon: "simple-icons:github", label: "GitHub", color: "hover:text-gray-900 dark:hover:text-white" },
-            { href: "https://www.linkedin.com/in/einar-m-b75b99388/", icon: "skill-icons:linkedin", label: "LinkedIn", color: "hover:text-blue-600" },
-            { href: "montalvoeinar669@gmail.com", icon: "material-icon-theme:email", label: "Email", color: "hover:text-green-600" }
+            {
+              href: "https://github.com/emontalvo610",
+              icon: "simple-icons:github",
+              label: "GitHub",
+              color: "hover:text-gray-900 dark:hover:text-white",
+            },
+            {
+              href: "https://www.linkedin.com/in/einar-mon-20b07a3a0/",
+              icon: "skill-icons:linkedin",
+              label: "LinkedIn",
+              color: "hover:text-blue-600",
+            },
+            {
+              href: "einarmontalvo610@gmail.com",
+              icon: "material-icon-theme:email",
+              label: "Email",
+              color: "hover:text-green-600",
+            },
           ].map((link) => (
-            <motion.div key={link.label} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            <motion.div
+              key={link.label}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
               <Link
                 href={link.href}
                 className={`inline-flex items-center gap-2 px-4 py-2 bg-white/80 hover:bg-white dark:bg-gray-800/80 dark:hover:bg-gray-800 backdrop-blur-sm rounded-full text-sm transition-all duration-300 border border-gray-300/50 dark:border-gray-600/50 shadow-lg hover:shadow-xl ${link.color}`}
@@ -144,11 +163,11 @@ export default function HeroSection() {
       >
         <motion.button
           onClick={() => {
-            const overviewSection = document.getElementById('overview');
+            const overviewSection = document.getElementById("overview");
             if (overviewSection) {
               overviewSection.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
+                behavior: "smooth",
+                block: "start",
               });
             }
           }}
@@ -158,7 +177,9 @@ export default function HeroSection() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          <span className="text-sm font-medium tracking-wide">Scroll for more</span>
+          <span className="text-sm font-medium tracking-wide">
+            Scroll for more
+          </span>
           <motion.div
             animate={{ y: [0, 4, 0] }}
             transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
@@ -174,4 +195,4 @@ export default function HeroSection() {
       </motion.div>
     </div>
   );
-} 
+}

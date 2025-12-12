@@ -7,136 +7,165 @@ import SectionHeader from "./SectionHeader";
 
 const projects = [
   {
-    title: "Dafabet",
-    subtitle: "Next-Gen Sports Betting Platform",
-    description: "A large-scale, multi-market sports betting platform reimagined with modern front-end architecture, high-performance streaming, and regional customization. Migrated from legacy Backbone.js to Next.js (v15) with SSR, ISR, and React Server Components (RSC), integrated with Nginx, Varnish, and Cloudflare CDN for edge acceleration.",
+    title: "MindsDB",
+    subtitle: "AI Data Platform & Conversational Analytics Interface",
+    description:
+      "A production-grade AI data platform enabling enterprises to query structured and unstructured data using SQL and natural language. Led 0→1 front-end development of MindsDB’s core UI, powering federated querying, AI agents, and conversational analytics across open-source and enterprise offerings.",
     features: [
-      "Server-Side Rendering (SSR) and Incremental Static Regeneration (ISR) for high-speed delivery",
-      "GraphQL + REST CMS integration for promotions, taxes, and localization management",
-      "Signals-based state management using Zotai with RTK and RTK Query for real-time updates",
-      "Multi-brand theming system using Shadcn UI, TailwindCSS, and ThemeProvider",
-      "Sub-20 ms render latency during 1M+ concurrent IPL sessions via WebSocket and long polling",
-      "CI/CD pipelines with Jest, Playwright, and React Testing Library achieving 75%+ coverage",
-      "Real-time odds streaming with BetGenius and Betradar integrations",
-      "Edge caching optimization with Nginx, Varnish, and Cloudflare CDN layers",
-      "Secure sandboxed live video widgets using HLS.js and custom JavaScript bridges"
+      "Multi-tab SQL Query Editor with execution lifecycle, schema awareness, and error handling",
+      "High-performance Results Viewer with virtualization, CSV/Markdown export, and large-dataset rendering",
+      "Natural-language Chat (Respond) interface converting user intent into SQL and semantic queries",
+      "Streaming LLM responses with partial rendering and cancellation support",
+      "Data Insights module with inline charts and analytical visualizations",
+      "Guided onboarding for databases, SaaS apps, and vector stores with schema introspection",
+      "Enterprise chatbot integrations for Slack and Microsoft Teams",
+      "RBAC, token-based authentication, and SOC-2-aligned security controls",
     ],
     deliverables: [
-      "Production-grade Next.js betting platform deployed globally",
-      "Reusable UI theming and localization architecture for 10+ regions",
-      "Betslip Controller with high-frequency odds synchronization",
-      "GraphQL-backed CMS and content federation",
-      "Automated end-to-end testing suite with CI/CD pipelines",
-      "Real-time streaming infrastructure and monitoring dashboard",
-      "Multi-brand support for localized branding and layouts",
-      "Analytics and telemetry integration for performance optimization"
+      "0→1 React-based AI data platform UI used across OSS and Enterprise editions",
+      "End-to-end Chat UX backed by Text-to-SQL, RAG pipelines, and MCP/A2A protocols",
+      "Reusable data-rendering and visualization framework optimized for scale",
+      "Data Catalog browsing and schema exploration experience",
+      "Slack and Teams chatbot interfaces for in-workflow AI querying",
+      "CI/CD pipelines with automated testing and preview deployments",
+      "Production observability with error tracking and performance monitoring",
+      "Cross-functional delivery with ML, data, and security teams",
     ],
-    tech: ["Next.js 15", "TypeScript", "TailwindCSS", "Shadcn UI", "Zotai", "Redux Toolkit", "GraphQL", "Varnish", "Nginx", "Cloudflare CDN", "WebSocket", "HLS.js", "Playwright", "Jest", "AWS"],
-    live: "https://dafabet.com",
-    gradient: "from-red-600 to-yellow-500",
+    tech: [
+      "React",
+      "TypeScript",
+      "Redux",
+      "React Query",
+      "WebSocket",
+      "OpenAI API",
+      "Hugging Face",
+      "Docker",
+      "GitHub Actions",
+      "AWS (S3, CloudFront, ALB)",
+      "Jest",
+      "React Testing Library",
+      "Playwright",
+      "Sentry",
+    ],
+    live: "https://mindsdb.com",
+    gradient: "from-indigo-500 to-purple-600",
     status: "Live",
-    category: "Sports Betting & Gaming",
+    category: "AI / Data Infrastructure",
     highlight: "Enterprise",
-    timeline: "2 years",
-    clientType: "Global iGaming & Entertainment"
+    timeline: "2023 – Present",
+    clientType: "B2B / Enterprise AI Platform",
   },
+
   {
-  title: "Ad.Net Dashboard",
-  subtitle: "Ad Network Campaign Management Platform",
-  description: "A full-featured advertising network dashboard enabling 10K+ advertisers to manage campaigns, track performance, and access real-time reporting. Designed for scalability, security, and rapid MVP delivery to production-ready solution.",
-  features: [
-    "Campaign management with role-based access control (RBAC)",
-    "Interactive dashboards with real-time charts and reporting",
-    "WebSocket-powered live updates processing 50K+ campaign events daily",
-    "Customizable filters and segmentation for advertiser insights",
-    "Responsive UI with TailwindCSS and MUI component library",
-    "Authentication and authorization via OAuth2 and JWT",
-    "Multi-tenant architecture supporting thousands of advertisers",
-    "CI/CD automation with zero-downtime deployments"
-  ],
-  deliverables: [
-    "MVP React/Next.js application delivered in under 3 months",
-    "Campaign dashboard with reporting and analytics",
-    "Reusable component library with 40+ Storybook-driven components",
-    "PostgreSQL + Prisma schema design optimized for low-latency queries",
-    "Secured REST APIs with OAuth2 and JWT authentication",
-    "Real-time WebSocket pipeline for campaign event ingestion",
-    "AWS ECS-based CI/CD pipeline reducing deploys to 15 minutes",
-    "Developer onboarding playbooks and team mentorship"
-  ],
-  tech: ["React", "Next.js", "TypeScript", "TailwindCSS", "MUI", "Storybook", "PostgreSQL", "Prisma", "WebSocket", "OAuth2", "JWT", "AWS ECS", "CI/CD"],
-  live:"https://opsplatform.ad.net",
-  gradient: "from-amber-500 to-orange-500",
-  status: "Live",
-  category: "AdTech Platform",
-  highlight: "Featured",
-  timeline: "1 year",
-  clientType: "Advertising Industry",
-},
-  {
-    title: "Athina.ai",
-    subtitle: "Enterprise LLM Development & Monitoring Platform",
-    description: "A production-grade platform enabling teams to build, test, and monitor LLM-powered applications at scale. Serving 50+ enterprise clients with comprehensive tools for prompt engineering, multi-model orchestration, and real-time performance monitoring across 100M+ daily API calls.",
+    title: "Snowflake Snowsight",
+    subtitle: "Interactive Cloud Data Exploration Platform",
+    description:
+      "Snowsight is Snowflake’s modern, browser-based analytics interface used by thousands of data teams to explore, query, and visualize data. Led front-end development of high-performance analytical workflows focused on responsiveness, scalability, and usability.",
     features: [
-      "Multi-model orchestration supporting OpenAI GPT-4, Claude, PaLM, Llama, and Mistral",
-      "Collaborative prompt engineering workspace with version control and A/B testing",
-      "Automated evaluation framework with hallucination detection and quality scoring",
-      "Real-time monitoring dashboard tracking token usage, latency, and model drift",
-      "Intelligent routing based on cost, latency, and performance requirements",
-      "Streaming response handling for real-time LLM interactions",
-      "Custom metrics for semantic similarity and response quality analysis",
-      "Event-driven architecture for processing large-scale LLM interactions"
+      "Interactive SQL worksheets with real-time execution feedback",
+      "Large-scale tabular data rendering with virtualization and incremental updates",
+      "Query history, session recovery, and cross-tab synchronization",
+      "GraphQL-based data fetching with streaming and polling",
+      "Reusable component platform with design tokens and shared UX patterns",
+      "Feature flags, experiments, and progressive rollout strategies",
+      "Accessibility and keyboard-driven workflows",
+      "Frontend telemetry and performance instrumentation",
     ],
     deliverables: [
-      "Full-stack web application deployed on AWS infrastructure",
-      "Multi-model LLM orchestration layer with intelligent routing",
-      "Prompt engineering workspace with collaborative editing",
-      "Automated testing and evaluation framework",
-      "Real-time analytics and monitoring dashboard",
-      "RESTful and GraphQL APIs for LLM provider integrations",
-      "Comprehensive documentation and open-source utilities"
+      "High-performance analytics UI serving thousands of concurrent users",
+      "Reusable UI platform standardizing dashboards, worksheets, and lineage views",
+      "Optimized rendering pipelines reducing memory and render time by 30–40%",
+      "Robust testing coverage and performance regression detection",
+      "End-to-end feature ownership from API contracts to rollout strategy",
     ],
-    tech: ["Next.js 15", "React 19", "TypeScript", "Tailwind CSS", "Node.js", "Python FastAPI", "PostgreSQL", "MongoDB", "Redis", "Apache Kafka", "AWS ECS", "Lambda", "D3.js", "LangChain", "WebSocket"],
-    live: "https://athina.ai",
-    gradient: "from-blue-500 to-cyan-500",
+    tech: [
+      "React",
+      "TypeScript",
+      "Redux",
+      "GraphQL",
+      "CSS Modules",
+      "Jest",
+      "React Testing Library",
+      "Playwright",
+      "Internal Telemetry",
+    ],
+    gradient: "from-sky-500 to-blue-600",
     status: "Live",
-    category: "AI/ML Platform",
-    highlight: "Featured",
-    timeline: "6 months",
-    clientType: "AI Industry"
+    category: "Cloud Data Platform",
+    highlight: "Enterprise",
+    timeline: "2020 – 2023",
+    clientType: "Enterprise Data & Analytics",
   },
+
   {
-    title: "Coco Robotics Command Center",
-    subtitle: "Real-Time Robot Fleet Management Platform",
-    description: "A comprehensive robotics tracking and management platform that enables real-time monitoring of autonomous service robots. Features advanced mapping capabilities for tracking robot movements, status monitoring, and fleet optimization across multiple deployment locations.",
+    title: "Figma",
+    subtitle: "Collaborative Design Editor & Platform",
+    description:
+      "A browser-based collaborative design platform used by millions of designers and engineers. Contributed to core editor features with a focus on real-time collaboration, rendering performance, and extensible platform capabilities.",
     features: [
-      "Real-time robot tracking with live position updates on interactive maps",
-      "Fleet status monitoring with health metrics and battery levels",
-      "Geofencing and zone management for robot navigation boundaries",
-      "Route optimization and path planning visualization",
-      "Alert system for maintenance needs and operational anomalies",
-      "Historical movement data analysis and heatmap generation",
-      "Multi-robot coordination and task assignment interface",
-      "Performance analytics dashboard with KPI tracking"
+      "Real-time multi-user collaboration with conflict-free updates",
+      "High-performance canvas rendering and interaction handling",
+      "Advanced UI tooling for selection, layout, and transformations",
+      "Plugin platform enabling third-party extensibility",
+      "Design system primitives and reusable UI infrastructure",
+      "Low-latency state synchronization across sessions",
     ],
     deliverables: [
-      "Production-ready fleet management web application",
-      "Real-time robot tracking system with Mapbox integration",
-      "Administrative dashboard for fleet operations",
-      "Mobile-responsive interface for field technicians",
-      "RESTful API for robot data ingestion",
-      "Alert and notification system",
-      "Historical data analytics and reporting tools",
-      "Documentation for system integration"
+      "Core editor features shipped to millions of users",
+      "Performance optimizations for large, complex design documents",
+      "Platform-level extensibility via Plugins",
+      "Scalable UI systems supporting enterprise adoption",
     ],
-    tech: ["Vue 3", "Pinia", "Mapbox GL JS", "TypeScript", "Vite", "Tailwind CSS", "Node.js", "WebSocket", "PostgreSQL", "Redis", "Express.js", "Chart.js"],
-    live: "https://www.cocodelivery.com/",
-    gradient: "from-purple-500 to-pink-500",
+    tech: [
+      "React",
+      "TypeScript",
+      "WebGL",
+      "Canvas APIs",
+      "Custom Rendering Engine",
+      "Real-time Collaboration",
+    ],
+    gradient: "from-pink-500 to-rose-500",
     status: "Live",
-    category: "IoT/Robotics Platform",
-    highlight: "Featured",
-    timeline: "8 months",
-    clientType: "Robotics Industry"
+    category: "Design & Collaboration Platform",
+    highlight: "Iconic",
+    timeline: "2018 – 2020",
+    clientType: "Design & Product Teams",
+  },
+
+  {
+    title: "VitalConnect",
+    subtitle: "Real-Time Patient Monitoring & Clinical Dashboards",
+    description:
+      "Clinician-facing monitoring platforms supporting FDA-cleared wearable devices for continuous patient care. Built real-time dashboards and alerting systems for hospital and remote-care environments.",
+    features: [
+      "Live ECG and vital-sign waveform visualizations",
+      "Responsive clinician dashboards for monitoring and triage",
+      "Alerting workflows for critical health events",
+      "Real-time data ingestion from wearable medical devices",
+      "Secure data views compliant with healthcare standards",
+      "Cross-device support for hospital and remote settings",
+    ],
+    deliverables: [
+      "Production clinical dashboards used in hospital environments",
+      "Real-time visualization of ECG and vital signals",
+      "Alert workflows supporting continuous patient monitoring",
+      "AWS-integrated frontend applications with device gateways",
+    ],
+    tech: [
+      "Angular",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "REST APIs",
+      "AWS",
+      "Android Gateways",
+    ],
+    gradient: "from-emerald-500 to-teal-600",
+    status: "Live",
+    category: "Healthcare & Medical Devices",
+    highlight: "Regulated",
+    timeline: "2015 – 2018",
+    clientType: "Healthcare & Medical Industry",
   },
 ];
 
@@ -235,9 +264,10 @@ export default function ProjectsSection() {
               className="group"
             >
               <div className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl rounded-2xl md:rounded-3xl border border-white/30 dark:border-gray-700/40 hover:border-gray-300 dark:hover:border-gray-600 transition-all duration-500 overflow-hidden shadow-lg md:shadow-xl hover:shadow-xl md:hover:shadow-2xl">
-
                 {/* Project Header with Gradient */}
-                <div className={`relative bg-gradient-to-br ${project.gradient} p-4 sm:p-6 md:p-8 lg:p-10`}>
+                <div
+                  className={`relative bg-gradient-to-br ${project.gradient} p-4 sm:p-6 md:p-8 lg:p-10`}
+                >
                   {/* Animated background pattern */}
                   <div className="absolute inset-0 opacity-10">
                     <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.3)_1px,transparent_1px)] bg-[length:20px_20px] md:bg-[length:30px_30px]" />
@@ -247,16 +277,46 @@ export default function ProjectsSection() {
                   <div className="hidden md:block absolute inset-0 opacity-20 group-hover:opacity-30 transition-opacity duration-500">
                     {[
                       { icon: "logos:react", pos: { top: "15%", left: "80%" } },
-                      { icon: "logos:nextjs-icon", pos: { top: "60%", right: "4%" } },
-                      { icon: "logos:typescript-icon", pos: { bottom: "20%", left: "75%" } },
-                      { icon: "logos:nodejs-icon", pos: { top: "25%", right: "15%" } },
-                      { icon: "logos:tailwindcss-icon", pos: { bottom: "30%", left: "85%" } },
-                      { icon: "logos:postgresql", pos: { top: "40%", right: "20%" } },
-                      { icon: "simple-icons:langchain", pos: { bottom: "10%", left: "70%" } },
-                      { icon: "logos:redis", pos: { top: "20%", right: "25%" } },
-                      { icon: "logos:socket-io", pos: { bottom: "25%", left: "90%" } },
-                      { icon: "logos:stripe", pos: { top: "30%", right: "30%" } },
-                      { icon: "logos:vercel-icon", pos: { bottom: "15%", left: "65%" } },
+                      {
+                        icon: "logos:nextjs-icon",
+                        pos: { top: "60%", right: "4%" },
+                      },
+                      {
+                        icon: "logos:typescript-icon",
+                        pos: { bottom: "20%", left: "75%" },
+                      },
+                      {
+                        icon: "logos:nodejs-icon",
+                        pos: { top: "25%", right: "15%" },
+                      },
+                      {
+                        icon: "logos:tailwindcss-icon",
+                        pos: { bottom: "30%", left: "85%" },
+                      },
+                      {
+                        icon: "logos:postgresql",
+                        pos: { top: "40%", right: "20%" },
+                      },
+                      {
+                        icon: "simple-icons:langchain",
+                        pos: { bottom: "10%", left: "70%" },
+                      },
+                      {
+                        icon: "logos:redis",
+                        pos: { top: "20%", right: "25%" },
+                      },
+                      {
+                        icon: "logos:socket-io",
+                        pos: { bottom: "25%", left: "90%" },
+                      },
+                      {
+                        icon: "logos:stripe",
+                        pos: { top: "30%", right: "30%" },
+                      },
+                      {
+                        icon: "logos:vercel-icon",
+                        pos: { bottom: "15%", left: "65%" },
+                      },
                     ].map((item, i) => (
                       <motion.div
                         key={i}
@@ -272,7 +332,12 @@ export default function ProjectsSection() {
                           ease: "easeInOut",
                         }}
                       >
-                        <Icon icon={item.icon} width={24} height={24} className="md:w-8 md:h-8" />
+                        <Icon
+                          icon={item.icon}
+                          width={24}
+                          height={24}
+                          className="md:w-8 md:h-8"
+                        />
                       </motion.div>
                     ))}
                   </div>
@@ -292,20 +357,33 @@ export default function ProjectsSection() {
                           className="px-2.5 py-1.5 md:px-4 md:py-2 bg-yellow-500/20 backdrop-blur-sm border border-yellow-400/30 text-yellow-200 rounded-full text-xs md:text-sm font-semibold flex items-center gap-1 md:gap-2"
                           whileHover={{ scale: 1.05 }}
                         >
-                          <Icon icon="solar:star-bold" width={12} height={12} className="md:w-4 md:h-4" />
-                          <span className="hidden sm:inline">{project.highlight}</span>
+                          <Icon
+                            icon="solar:star-bold"
+                            width={12}
+                            height={12}
+                            className="md:w-4 md:h-4"
+                          />
+                          <span className="hidden sm:inline">
+                            {project.highlight}
+                          </span>
                         </motion.span>
                       )}
 
                       <motion.span
-                        className={`px-2.5 py-1.5 md:px-4 md:py-2 backdrop-blur-sm rounded-full text-xs md:text-sm font-semibold flex items-center gap-1 md:gap-2 ${project.status === 'Live'
-                          ? 'bg-green-500/20 text-green-200 border border-green-400/30'
-                          : 'bg-orange-500/20 text-orange-200 border border-orange-400/30'
-                          }`}
+                        className={`px-2.5 py-1.5 md:px-4 md:py-2 backdrop-blur-sm rounded-full text-xs md:text-sm font-semibold flex items-center gap-1 md:gap-2 ${
+                          project.status === "Live"
+                            ? "bg-green-500/20 text-green-200 border border-green-400/30"
+                            : "bg-orange-500/20 text-orange-200 border border-orange-400/30"
+                        }`}
                         whileHover={{ scale: 1.05 }}
                       >
-                        <div className={`w-1.5 h-1.5 md:w-2 md:h-2 rounded-full ${project.status === 'Live' ? 'bg-green-400' : 'bg-orange-400'
-                          } animate-pulse`} />
+                        <div
+                          className={`w-1.5 h-1.5 md:w-2 md:h-2 rounded-full ${
+                            project.status === "Live"
+                              ? "bg-green-400"
+                              : "bg-orange-400"
+                          } animate-pulse`}
+                        />
                         {project.status}
                       </motion.span>
 
@@ -333,12 +411,16 @@ export default function ProjectsSection() {
 
                     {/* Action Buttons */}
                     <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
-
                       <Link
-                        href={project.live}
+                        href={project.live ?? "#"}
                         className="flex items-center justify-center gap-2 md:gap-3 px-4 py-2.5 md:px-6 md:py-3 bg-white text-gray-900 rounded-lg md:rounded-xl hover:bg-gray-100 transition-all duration-300 text-sm font-medium shadow-lg hover:shadow-xl active:scale-95"
                       >
-                        <Icon icon="solar:arrow-up-outline" width={18} height={18} className="md:w-5 md:h-5" />
+                        <Icon
+                          icon="solar:arrow-up-outline"
+                          width={18}
+                          height={18}
+                          className="md:w-5 md:h-5"
+                        />
                         <span>Live Demo</span>
                       </Link>
                     </div>
@@ -348,12 +430,14 @@ export default function ProjectsSection() {
                 {/* Project Details Content */}
                 <div className="p-4 sm:p-6 md:p-8 lg:p-10">
                   <div className="grid lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12">
-
                     {/* Features Section */}
                     <div>
                       <h4 className="text-lg md:text-xl lg:text-2xl font-bold text-gray-900 dark:text-white mb-4 md:mb-6 flex items-center gap-2 md:gap-3">
                         <div className="p-1.5 md:p-2 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg md:rounded-xl">
-                          <Icon icon="solar:settings-bold" className="text-white w-[18px] h-[18px] md:w-6 md:h-6" />
+                          <Icon
+                            icon="solar:settings-bold"
+                            className="text-white w-[18px] h-[18px] md:w-6 md:h-6"
+                          />
                         </div>
                         <span>Key Features</span>
                       </h4>
@@ -370,7 +454,9 @@ export default function ProjectsSection() {
                               icon="solar:check-circle-bold"
                               className="text-green-500 mt-0.5 flex-shrink-0 w-4 h-4 md:w-5 md:h-5"
                             />
-                            <span className="text-sm md:text-base leading-relaxed">{feature}</span>
+                            <span className="text-sm md:text-base leading-relaxed">
+                              {feature}
+                            </span>
                           </motion.li>
                         ))}
                       </ul>
@@ -380,26 +466,33 @@ export default function ProjectsSection() {
                     <div className="mt-6 lg:mt-0">
                       <h4 className="text-lg md:text-xl lg:text-2xl font-bold text-gray-900 dark:text-white mb-4 md:mb-6 flex items-center gap-2 md:gap-3">
                         <div className="p-1.5 md:p-2 bg-gradient-to-r from-green-500 to-emerald-600 rounded-lg md:rounded-xl">
-                          <Icon icon="solar:delivery-bold" className="text-white w-[18px] h-[18px] md:w-6 md:h-6" />
+                          <Icon
+                            icon="solar:delivery-bold"
+                            className="text-white w-[18px] h-[18px] md:w-6 md:h-6"
+                          />
                         </div>
                         <span>Deliverables</span>
                       </h4>
                       <ul className="space-y-2.5 md:space-y-3">
-                        {project.deliverables.map((deliverable, deliverableIndex) => (
-                          <motion.li
-                            key={deliverableIndex}
-                            initial={{ opacity: 0, x: -20 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            transition={{ delay: deliverableIndex * 0.1 }}
-                            className="flex items-start gap-2.5 md:gap-3 text-gray-700 dark:text-gray-300"
-                          >
-                            <Icon
-                              icon="solar:box-bold"
-                              className="text-blue-500 mt-0.5 flex-shrink-0 w-4 h-4 md:w-5 md:h-5"
-                            />
-                            <span className="text-sm md:text-base leading-relaxed">{deliverable}</span>
-                          </motion.li>
-                        ))}
+                        {project.deliverables.map(
+                          (deliverable, deliverableIndex) => (
+                            <motion.li
+                              key={deliverableIndex}
+                              initial={{ opacity: 0, x: -20 }}
+                              whileInView={{ opacity: 1, x: 0 }}
+                              transition={{ delay: deliverableIndex * 0.1 }}
+                              className="flex items-start gap-2.5 md:gap-3 text-gray-700 dark:text-gray-300"
+                            >
+                              <Icon
+                                icon="solar:box-bold"
+                                className="text-blue-500 mt-0.5 flex-shrink-0 w-4 h-4 md:w-5 md:h-5"
+                              />
+                              <span className="text-sm md:text-base leading-relaxed">
+                                {deliverable}
+                              </span>
+                            </motion.li>
+                          )
+                        )}
                       </ul>
                     </div>
                   </div>
@@ -408,7 +501,10 @@ export default function ProjectsSection() {
                   <div className="mt-6 md:mt-8 lg:mt-12 pt-6 md:pt-8 border-t border-gray-200/50 dark:border-gray-700/50">
                     <h4 className="text-lg md:text-xl lg:text-2xl font-bold text-gray-900 dark:text-white mb-4 md:mb-6 flex items-center gap-2 md:gap-3">
                       <div className="p-1.5 md:p-2 bg-gradient-to-r from-purple-500 to-pink-600 rounded-lg md:rounded-xl">
-                        <Icon icon="solar:code-bold" className="text-white w-[18px] h-[18px] md:w-6 md:h-6" />
+                        <Icon
+                          icon="solar:code-bold"
+                          className="text-white w-[18px] h-[18px] md:w-6 md:h-6"
+                        />
                       </div>
                       <span>Technology Stack</span>
                     </h4>
@@ -439,17 +535,18 @@ export default function ProjectsSection() {
           variants={itemVariants}
           className="text-center mt-12 md:mt-16 lg:mt-20 px-4 mb-12"
         >
-          <Link
-            href="#contact"
-          >
-
+          <Link href="#contact">
             <motion.div
               className="inline-flex items-center gap-2 md:gap-3 px-4 py-2.5 md:px-6 md:py-3 bg-gradient-to-r from-blue-500/10 to-purple-500/10 backdrop-blur-sm border border-blue-500/20 dark:border-purple-500/20 rounded-xl md:rounded-2xl"
               whileHover={{ scale: 1.05 }}
             >
-              <Icon icon="solar:programming-bold" className="text-blue-500 dark:text-purple-400 w-5 h-5 md:w-6 md:h-6" />
+              <Icon
+                icon="solar:programming-bold"
+                className="text-blue-500 dark:text-purple-400 w-5 h-5 md:w-6 md:h-6"
+              />
               <span className="text-gray-700 dark:text-gray-300 font-medium text-sm md:text-base text-center">
-                Interested in working together? Let&apos;s create something amazing!
+                Interested in working together? Let&apos;s create something
+                amazing!
               </span>
             </motion.div>
           </Link>
@@ -457,4 +554,4 @@ export default function ProjectsSection() {
       </motion.div>
     </motion.section>
   );
-} 
+}

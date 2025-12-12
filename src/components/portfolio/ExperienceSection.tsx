@@ -6,24 +6,48 @@ import SectionHeader from "./SectionHeader";
 
 const experience = [
   {
-    role: "Staff Software Engineer",
-    company: "Inoxoft",
+    role: "Senior Frontend Engineer",
+    company: "MindsDB",
     period: "May 2023 — August 2025",
     type: "Remote",
-    companyIcon: "inoxoft.jpg",
+    companyIcon: "mindsdb.png",
     companyColor: "from-purple-500 to-purple-600",
-    description: "Led end-to-end frontend and full-stack builds for startups, delivering investor-ready MVPs from scratch.",
+    description:
+      "Led 0→1 frontend development of an AI-powered data platform, owning architecture for core data exploration, querying, and conversational AI experiences.",
     achievements: [
-      "Built React/Next.js and TypeScript apps from zero to MVP in less than 3 months, delivering fast prototypes to production",
-      "Designed RESTful APIs with Node.js (Express + TypeORM) and Python (FastAPI + SQLAlchemy)",
-      "Delivered Ad.Net campaign dashboard, scaling to over 10K advertiser campaigns with charts, reporting, and RBAC",
-      "Designed PostgreSQL and Prisma schemas, ensuring normalized entities and maintaining query latency under 200ms",
-      "Styled platforms with TailwindCSS and MUI, developing over 40 Storybook-driven components reused across clients",
-      "Implemented Kafka + WebSocket live updates, handling over 50K campaign events per day with minimal lag",
-      "Secured APIs with OAuth2 and JWT, achieving 100% protected endpoints and compliance for clients",
-      "Automated CI/CD using GitHub Actions and Docker to build and deploy containers to AWS ECS, reducing deployment time"
+      "Led end-to-end development of the AI data platform UI, architecting SQL Query Editor, Results Viewer, Object Explorer, and Data Insights modules with React, TypeScript, and Redux",
+      "Designed and shipped a natural-language chat interface converting user intent into SQL and semantic queries, collaborating on Text-to-SQL, RAG pipelines, and LLM streaming responses",
+      "Built scalable data visualization and rendering pipelines for large tabular and chart-based outputs with virtualization, windowing, and incremental hydration",
+      "Owned data-source onboarding UX for databases, SaaS apps, and vector stores, coordinating schema introspection and metadata APIs with backend teams",
+      "Implemented enterprise chatbot integrations for Slack and Microsoft Teams with secure token handling and workspace-level permissions",
+      "Established CI/CD and cloud deployment workflows using GitHub Actions, Docker, and AWS (S3, CloudFront, ALB) with production observability via Sentry",
+      "Defined frontend testing and quality strategy with Jest, React Testing Library, Playwright/Cypress, contract testing, and performance regression checks",
+      "Drove staff-level cross-functional execution with ML, data, and security teams to ship SOC-2-aligned features including RBAC and token-based auth",
     ],
-    technologies: ["React", "Next.js", "TypeScript", "Node.js", "Express", "TypeORM", "Python", "FastAPI", "SQLAlchemy", "PostgreSQL", "Prisma", "Kafka", "WebSocket", "TailwindCSS", "MUI", "Storybook", "OAuth2", "JWT", "GitHub Actions", "Docker", "AWS ECS", "CI/CD"]
+    technologies: [
+      "React",
+      "TypeScript",
+      "Redux",
+      "LLMs",
+      "Text-to-SQL",
+      "RAG",
+      "WebSocket",
+      "Data Visualization",
+      "Virtualization",
+      "Slack API",
+      "Microsoft Teams API",
+      "GitHub Actions",
+      "Docker",
+      "AWS S3",
+      "AWS CloudFront",
+      "AWS ALB",
+      "Sentry",
+      "Jest",
+      "React Testing Library",
+      "Playwright",
+      "Cypress",
+      "RBAC",
+    ],
   },
   {
     role: "Senior Frontend Engineer",
@@ -32,35 +56,62 @@ const experience = [
     type: "Hybrid",
     companyIcon: "snowflake.png",
     companyColor: "from-sky-500 to-sky-600",
-    description: "Built core Snowsight features including worksheets editor, interactive dashboard tiles, and virtualized result rendering.",
+    description:
+      "Led frontend development of Snowsight’s interactive analytics and data exploration platform used by thousands of customers.",
     achievements: [
-      "Implemented Snowsight Worksheets with React, TypeScript, and Redux, enabling inline SQL/Python editing and faster analyst workflows",
-      "Built dashboard tiles with ECharts, Canvas/SVG, and React to turn query results into shareable visualizations",
-      "Engineered virtualized result tables with React-Window and incremental REST fetching to keep large result sets responsive",
-      "Owned editor UX (autocomplete, multi-tab) with TypeScript and telemetry, reducing edit-to-run friction",
-      "Delivered data dashboards backed by Elasticsearch queries, used daily by 200+ internal teams",
-      "Raised frontend reliability with Jest, React Testing Library, Cypress, and CI — reducing regressions and increasing confidence",
-      "Partnered on API design with REST and server-side caching, cutting metadata round-trips and improving load times",
-      "Delivered accessibility and i18n with ARIA, RTL, and localization libraries, expanding usability globally"
+      "Led frontend development of Snowsight’s interactive data exploration interface using React, TypeScript, Redux, and GraphQL",
+      "Designed high-performance data rendering pipelines with virtualization, memoization, and fine-grained selectors, reducing render time and memory usage by 30–40%",
+      "Built a scalable UI platform with component-driven architecture, design tokens, and CSS Modules to standardize UX across dashboards and worksheets",
+      "Integrated real-time query execution and streaming results via GraphQL subscriptions and polling with robust cancellation and error handling",
+      "Improved reliability with comprehensive testing using Jest, React Testing Library, and Playwright alongside frontend performance instrumentation",
+      "Owned complex feature delivery end-to-end, from API contracts to rollout strategy using feature flags, A/B experiments, and accessibility upgrades",
+      "Collaborated with backend teams on query workflows, metadata APIs, and state synchronization across sessions",
+      "Advanced accessibility and usability with ARIA best practices and consistent interaction patterns across the product",
     ],
-    technologies: ["React", "TypeScript", "Redux", "ECharts", "Canvas", "SVG", "React-Window", "REST", "Elasticsearch", "Jest", "RTL", "Cypress", "CI/CD", "Accessibility", "i18n", "ARIA"]
+    technologies: [
+      "React",
+      "TypeScript",
+      "Redux",
+      "GraphQL",
+      "Virtualization",
+      "Memoization",
+      "Design Systems",
+      "CSS Modules",
+      "Feature Flags",
+      "A/B Testing",
+      "Jest",
+      "React Testing Library",
+      "Playwright",
+      "Accessibility",
+      "ARIA",
+      "Telemetry",
+    ],
   },
   {
-    role: "Software Engineer II",
-    company: "Microsoft",
+    role: "Software Engineer",
+    company: "Figma",
     period: "April 2018 — November 2020",
     type: "On-site",
-    companyIcon: "microsoft.png",
+    companyIcon: "figma.png",
     companyColor: "from-blue-500 to-blue-600",
-    description: "Full-stack engineer on Windows Admin Center (Project Honolulu), Microsoft’s browser-based platform for managing Windows Server infrastructure.",
+    description:
+      "Frontend engineer focused on building high-performance, real-time collaborative experiences in Figma’s browser-based design editor.",
     achievements: [
-      "Developed Angular + TypeScript dashboards for server health, roles, and performance monitoring",
-      "Built ASP.NET Core REST APIs to expose server management endpoints to the web UI",
-      "Designed SQL Server data models for logging, session storage, and historical metrics",
-      "Implemented role-based access control (RBAC) with Active Directory and OAuth2 integration",
-      "Strengthened QA with Jasmine + Protractor E2E tests, reducing production regressions by 25%"
+      "Developed core design editor features emphasizing real-time collaboration and low-latency rendering",
+      "Optimized rendering performance and interaction responsiveness for complex design documents",
+      "Built advanced UI interactions using TypeScript and React for professional design workflows",
+      "Contributed to real-time multiplayer editing and shared state synchronization",
+      "Shipped platform-level features including Plugins and design system capabilities supporting enterprise scale",
     ],
-    technologies: ["Angular", "TypeScript", "ASP.NET Core", "REST", "SQL Server", "RBAC", "Active Directory", "OAuth2", "Jasmine", "Protractor"]
+    technologies: [
+      "TypeScript",
+      "React",
+      "WebGL",
+      "Real-time Collaboration",
+      "Rendering Performance",
+      "Design Systems",
+      "Browser APIs",
+    ],
   },
   {
     role: "Software Engineer",
@@ -69,18 +120,28 @@ const experience = [
     type: "On-site",
     companyIcon: "accenture.png",
     companyColor: "from-gray-500 to-gray-600",
-    description: "Frontend engineer for a real-time ECG monitoring system integrated with a HIPAA-compliant AWS pipeline.",
+    description:
+      "Frontend engineer building real-time, clinician-facing healthcare applications for continuous patient monitoring.",
     achievements: [
-      "Built continuous, low-latency ECG visualizations with Angular and HTML5 Canvas, enabling real-time waveform rendering",
-      "Integrated front-end streaming with AWS-backed pipeline (WebSocket/HTTP to Kinesis/Lambda)",
-      "Hardened UI for PHI with secure session patterns, audit hooks, and access controls",
-      "Added test/observability stack (Jasmine/Karma, Cypress, telemetry) to track latency and workflows",
-      "Implemented memory-efficient ring buffer and requestAnimationFrame redraw strategy"
+      "Built clinician-facing web applications for real-time ECG and vital-sign visualization using Angular and JavaScript",
+      "Implemented low-latency waveform rendering and alerting workflows for continuous patient monitoring",
+      "Developed responsive dashboards and data views integrated with AWS-backed services",
+      "Integrated front-end applications with Android gateways and REST APIs for hospital and remote-care use cases",
+      "Supported FDA-cleared monitoring systems with production-grade reliability and performance constraints",
     ],
-    technologies: ["Angular", "Canvas", "AWS Kinesis", "AWS Lambda", "WebSocket", "HTTP", "Jasmine", "Karma", "Cypress", "Telemetry"]
-  }
+    technologies: [
+      "JavaScript",
+      "Angular",
+      "HTML",
+      "CSS",
+      "Canvas",
+      "REST APIs",
+      "AWS",
+      "Real-time Visualization",
+      "Healthcare Systems",
+    ],
+  },
 ];
-
 
 export default function ExperienceSection() {
   const containerVariants = {
@@ -166,14 +227,16 @@ export default function ExperienceSection() {
                     variants={iconVariants}
                     whileHover={{ scale: 1.1, rotate: 5 }}
                   >
-                    <img 
+                    <img
                       src={exp.companyIcon}
                       className="text-white  relative z-10 rounded-full"
                       width={100}
                       height={100}
                     />
                     {/* Animated background gradient */}
-                    <div className={`absolute inset-0 bg-gradient-to-br opacity-0 group-hover:opacity-20 transition-opacity duration-500`} />
+                    <div
+                      className={`absolute inset-0 bg-gradient-to-br opacity-0 group-hover:opacity-20 transition-opacity duration-500`}
+                    />
                   </motion.div>
                 </div>
 
@@ -187,7 +250,12 @@ export default function ExperienceSection() {
                       transition={{ delay: 0.2 }}
                       className="flex items-center gap-2 md:gap-3 text-gray-600 dark:text-gray-400 text-xs md:text-sm font-medium"
                     >
-                      <Icon icon="solar:calendar-outline" width={14} height={14} className="md:w-4 md:h-4" />
+                      <Icon
+                        icon="solar:calendar-outline"
+                        width={14}
+                        height={14}
+                        className="md:w-4 md:h-4"
+                      />
                       <span>{exp.period}</span>
                     </motion.div>
 
@@ -228,7 +296,12 @@ export default function ExperienceSection() {
                     className="space-y-3 md:space-y-4"
                   >
                     <h4 className="text-base md:text-lg font-bold text-gray-800 dark:text-gray-200 flex items-center gap-2">
-                      <Icon icon="solar:cup-star-bold" className="text-amber-500" width={22} height={22} />
+                      <Icon
+                        icon="solar:cup-star-bold"
+                        className="text-amber-500"
+                        width={22}
+                        height={22}
+                      />
                       Key Achievements
                     </h4>
 
@@ -260,7 +333,12 @@ export default function ExperienceSection() {
                     className="space-y-3 md:space-y-4"
                   >
                     <h4 className="text-base md:text-lg font-bold text-gray-800 dark:text-gray-200 flex items-center gap-2">
-                      <Icon icon="solar:programming-bold" className="text-purple-500" width={18} height={18} />
+                      <Icon
+                        icon="solar:programming-bold"
+                        className="text-purple-500"
+                        width={18}
+                        height={18}
+                      />
                       Technologies & Skills
                     </h4>
 
@@ -308,24 +386,36 @@ export default function ExperienceSection() {
               whileHover={{ scale: 1.05, y: -5 }}
               className="group p-6 md:p-8 rounded-xl md:rounded-2xl bg-gradient-to-br from-blue-50/50 to-blue-100/30 dark:from-blue-950/20 dark:to-blue-900/10 border border-blue-200/30 dark:border-blue-800/20 hover:border-blue-300/50 dark:hover:border-blue-600/30 transition-all duration-500"
             >
-              <div className="text-4xl md:text-5xl font-bold text-blue-600 dark:text-blue-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">10+</div>
-              <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">Years Experience</div>
+              <div className="text-4xl md:text-5xl font-bold text-blue-600 dark:text-blue-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">
+                10+
+              </div>
+              <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">
+                Years Experience
+              </div>
             </motion.div>
 
             <motion.div
               whileHover={{ scale: 1.05, y: -5 }}
               className="group p-6 md:p-8 rounded-xl md:rounded-2xl bg-gradient-to-br from-green-50/50 to-green-100/30 dark:from-green-950/20 dark:to-green-900/10 border border-green-200/30 dark:border-green-800/20 hover:border-green-300/50 dark:hover:border-green-600/30 transition-all duration-500"
             >
-              <div className="text-4xl md:text-5xl font-bold text-green-600 dark:text-green-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">10+</div>
-              <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">Projects Completed</div>
+              <div className="text-4xl md:text-5xl font-bold text-green-600 dark:text-green-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">
+                10+
+              </div>
+              <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">
+                Projects Completed
+              </div>
             </motion.div>
 
             <motion.div
               whileHover={{ scale: 1.05, y: -5 }}
               className="group p-6 md:p-8 rounded-xl md:rounded-2xl bg-gradient-to-br from-purple-50/50 to-purple-100/30 dark:from-purple-950/20 dark:to-purple-900/10 border border-purple-200/30 dark:border-purple-800/20 hover:border-purple-300/50 dark:hover:border-purple-600/30 transition-all duration-500 sm:col-span-2 lg:col-span-1"
             >
-              <div className="text-4xl md:text-5xl font-bold text-purple-600 dark:text-purple-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">90%</div>
-              <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">Success Rate</div>
+              <div className="text-4xl md:text-5xl font-bold text-purple-600 dark:text-purple-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">
+                90%
+              </div>
+              <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">
+                Success Rate
+              </div>
             </motion.div>
           </div>
         </motion.div>

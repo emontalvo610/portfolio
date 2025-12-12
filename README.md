@@ -256,8 +256,8 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 
 - Portfolio: [https://portfolio-einar.vercel.app/](https://portfolio-einar.vercel.app/)
 - GitHub: [https://github.com/emontalvo610](https://github.com/emontalvo610)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/einar-m-b75b99388/)
-- Email: montalvoeinar669@gmail.com
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/einar-mon-20b07a3a0/)
+- Email: einarmontalvo610@gmail.com
 
 ## 🙏 Acknowledgments
 
