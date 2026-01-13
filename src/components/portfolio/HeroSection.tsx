@@ -45,7 +45,7 @@ export default function HeroSection() {
           transition={{ delay: 0.2, duration: 0.6 }}
         >
           <span className="bg-gradient-to-r from-gray-900 via-gray-700 to-gray-900 dark:from-white dark:via-gray-100 dark:to-white bg-clip-text text-transparent z-10">
-            Einar Montalvo
+            Einar Mone
           </span>
         </motion.h1>
 
@@ -78,13 +78,7 @@ export default function HeroSection() {
               color: "hover:text-gray-900 dark:hover:text-white",
             },
             {
-              href: "https://www.linkedin.com/in/einar-mon-20b07a3a0/",
-              icon: "skill-icons:linkedin",
-              label: "LinkedIn",
-              color: "hover:text-blue-600",
-            },
-            {
-              href: "einarmontalvo610@gmail.com",
+              href: "einar.mone@yahoo.com",
               icon: "material-icon-theme:email",
               label: "Email",
               color: "hover:text-green-600",

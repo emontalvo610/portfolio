@@ -106,7 +106,7 @@ export default function OverviewSection() {
                       <span className="text-2xl sm:text-3xl md:text-4xl">
                         👋
                       </span>
-                      Hello, I&apos;m Einar Montalvo
+                      Hello, I&apos;m Einar Mone
                     </h3>
                     <p className="text-base md:text-lg lg:text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-4 md:mb-6">
                       A passionate{" "}
@@ -291,7 +291,7 @@ export default function OverviewSection() {
               </h4>
               <div className="space-y-3">
                 <motion.a
-                  href="mailto:einarmontalvo610@gmail.com"
+                  href="mailto:einar.mone@yahoo.com"
                   whileHover={{ scale: 1.02, x: 4 }}
                   whileTap={{ scale: 0.98 }}
                   className="flex items-center gap-3 p-3 rounded-lg bg-white/70 dark:bg-gray-800/30 hover:bg-white/90 dark:hover:bg-gray-800/50 transition-all duration-300 group border border-white/20 dark:border-gray-700/30"
@@ -306,7 +306,7 @@ export default function OverviewSection() {
                   </div>
                   <div>
                     <div className="text-sm font-bold text-gray-900 dark:text-white break-all">
-                      einarmontalvo610@gmail.com
+                      einar.mone@yahoo.com
                     </div>
                   </div>
                 </motion.a>

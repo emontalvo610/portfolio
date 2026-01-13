@@ -1,4 +1,4 @@
-# 🚀 Einar Montalvo - Portfolio
+# 🚀 Einar Mone- Portfolio
 
 A stunning, modern portfolio website built with cutting-edge technologies and beautiful animations inspired by Aceternity UI design principles.
 
@@ -252,12 +252,11 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 
 ## 👨‍💻 Author
 
-**Einar Montalvo**
+**Einar Mone**
 
 - Portfolio: [https://portfolio-einar.vercel.app/](https://portfolio-einar.vercel.app/)
 - GitHub: [https://github.com/emontalvo610](https://github.com/emontalvo610)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/einar-mon-20b07a3a0/)
-- Email: einarmontalvo610@gmail.com
+- Email: einar.mone@yahoo.com
 
 ## 🙏 Acknowledgments
 
